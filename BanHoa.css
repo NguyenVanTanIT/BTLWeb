@@ -1,0 +1,105 @@
+@charset 'UTF-8';
+body{
+		background-image: url("background.png");
+		font-size: 15px;
+		font-family: sans-serif;
+	}
+header{
+	width: 1200px;
+	height: 150px;
+	background: #ffff;
+	margin: auto;
+}
+#logo{
+	
+	float: left;
+}
+#backgroundlogo{
+	float: left;
+}
+
+
+
+#menu ul  {
+	width: 1200px;
+	background:#f8f8ff;
+	margin: auto;
+	list-style:  none;
+	/*bỏ dấu chấm đầu dòng*/
+	list-style-type: none;
+	padding: 0 ;
+	border-bottom: 1px solid #e8e8ee;
+
+}
+#menu div ul li  {
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 1em;
+	/*chỉnh cho menu hiển thi theo thằng cha nó**/
+	position: relative;
+	color: #f1f1f1;
+	/* các thuộc tính hiển thị nằm ngang*/
+	display: inline-table;
+	/*kết nối cha với con*/
+	position: relative;
+}
+#menu div ul li a{
+	/* xóa gạch dưới*/
+	text-decoration: none;  
+	color: black;
+	font-weight: bold;
+	display: block;
+}
+#menu div ul li:hover{
+	background-color: pink;
+}
+#con{
+	line-height: 20px;
+	width: 200px;
+	position: absolute;
+	display: none;
+	margin-left: -15px;
+	background-color: pink;
+
+
+}
+#menu div ul li:hover #con{
+	display: block;
+}
+
+
+section{
+	width: 1200px;
+	height: 1000px;
+	margin: auto;
+}
+#service{
+	color: grey;
+}
+#address{
+	color: red;
+	margin: auto;
+}
+
+
+
+footer
+{
+	width: 1200px;
+	height: 100px;
+	background: #ff99ff;
+	margin: auto;
+}
+#left{
+	width: 250px;
+	height: 1000px;
+	float: left;
+}
+#main{
+	width: 950px;
+	height: 1000px;
+	background: green;
+	float: left;
+}
+
