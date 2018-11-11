@@ -1,28 +1,31 @@
 @charset 'UTF-8';
 body{
-		background-image: url("background.png");
+		
 		font-size: 15px;
 		font-family: sans-serif;
+		background-image: url('./background.png');
 	}
 header{
 	width: 1200px;
 	height: 150px;
-	background: #ffff;
 	margin: auto;
 }
 #logo{
-	
+	width: 400px;
+	height: 150px;
 	float: left;
 }
-#backgroundlogo{
+#box{
+	width: 800px;
+	height: 150px;
+	background-image: url('./backgroundlogo.png');
 	float: left;
 }
-
 
 
 #menu ul  {
 	width: 1200px;
-	background:#f8f8ff;
+	background:#e1c5dd;
 	margin: auto;
 	list-style:  none;
 	/*bỏ dấu chấm đầu dòng*/
