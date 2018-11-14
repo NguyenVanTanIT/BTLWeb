@@ -3,29 +3,16 @@ body{
 		
 		font-size: 15px;
 		font-family: sans-serif;
-		background-image: url('./background.png');
 	}
 header{
 	width: 1200px;
-	height: 150px;
-	margin: auto;
+	height: 100px;
+	margin:  auto;
 }
-#logo{
-	width: 400px;
-	height: 150px;
-	float: left;
-}
-#box{
-	width: 800px;
-	height: 150px;
-	background-image: url('./backgroundlogo.png');
-	float: left;
-}
-
 
 #menu ul  {
 	width: 1200px;
-	background:#e1c5dd;
+	background: blue;
 	margin: auto;
 	list-style:  none;
 	/*bỏ dấu chấm đầu dòng*/
@@ -35,7 +22,7 @@ header{
 
 }
 #menu div ul li  {
-	width: 100px;
+	width: auto;
 	height: 40px;
 	line-height: 40px;
 	padding: 0 1em;
@@ -50,52 +37,27 @@ header{
 #menu div ul li a{
 	/* xóa gạch dưới*/
 	text-decoration: none;  
-	color: black;
+	color: #f1f1f1;
 	font-weight: bold;
 	display: block;
 }
 #menu div ul li:hover{
-	background-color: pink;
+	background-color: #3399FF;
 }
 #con{
 	line-height: 20px;
 	width: 200px;
 	position: absolute;
 	display: none;
-	margin-left: -15px;
-	background-color: pink;
+	margin-left: -14px;
+	background-color: #3399FF;
 }
 #menu div ul li:hover #con{
 	display: block;
 }
 section{
 	width: 1200px;
-	height: 1000px;
+	height: 300px;
 	margin: auto;
+	background: blue;
 }
-#service{
-	color: grey;
-}
-#address{
-	color: red;
-	margin: auto;
-}
-footer
-{
-	width: 1200px;
-	height: 100px;
-	background: #ff99ff;
-	margin: auto;
-}
-#left{
-	width: 250px;
-	height: 1000px;
-	float: left;
-}
-#main{
-	width: 950px;
-	height: 1000px;
-	background-image: url('backgroundlogo.png');
-	float: left;
-}
-
