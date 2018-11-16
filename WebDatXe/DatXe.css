@@ -1,0 +1,72 @@
+body
+{
+	font-family: Tahoma;
+	font-size: 13px;
+	width: 1000px;
+	margin: 0px auto;
+	/*background: url();*/
+}
+#banner
+{
+	background: orange;
+	height: 150px;
+	width: 1000px
+}
+#menu
+{
+	background: pink;
+	height: 40px;
+}
+#logo
+{
+	background: orange;
+	height: 280px;
+	width: 1000px
+}
+#main
+{
+	margin-top: 6px
+}
+#main #left
+{
+	background: brown;
+	width: 600px;
+	float: left;
+	min-height: 400px; /* chiều cao tối thiểu*/
+}
+#main #right
+{
+	background: blue;
+	width: 400px;
+	float: left;
+	min-height: 400px; /* chiều cao tối thiểu*/
+}
+#footer
+{
+	background: grey;
+	width: 1000px;
+	text-align: center;
+	height: 70px;
+	color: purple;
+	clear: left;
+	line-height: 70px /*căn ra giữa*/
+
+}
+#menu ul
+{
+	margin: 0px;
+	padding: 0px; /*reset*/
+}
+#menu ul li
+{
+	list-style: none;
+	float: left;
+}
+#menu ul li a
+{
+	color: black;
+	font-weight: bold;
+	font-family: Brush Script MT;
+	padding: 0px 20px 0px 50px;
+	border-right: 1px solid white;
+}
