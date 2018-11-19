@@ -1,22 +1,28 @@
-body
-{
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.wrapper {
 	font-family: Tahoma;
 	font-size: 13px;
 	width: 1000px;
 	margin: 0px auto;
-	/*background: url();*/
 }
-#banner
+
+#slogan
 {
 	background: orange;
-	height: 150px;
+	height: 80px;
 	width: 1000px
 }
+
 #menu
 {
 	background: pink;
 	height: 40px;
+	width: 1000px
 }
+
 #logo
 {
 	background: orange;
@@ -52,21 +58,74 @@ body
 	line-height: 70px /*căn ra giữa*/
 
 }
-#menu ul
-{
-	margin: 0px;
-	padding: 0px; /*reset*/
-}
-#menu ul li
-{
+
+
+#menu ul {
 	list-style: none;
-	float: left;
 }
-#menu ul li a
-{
-	color: black;
+#menu ul li {
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	background: pink;
+	position: relative;
+	display: inline-table;
+	text-align: center;
+	margin-left: -4px; 
 	font-weight: bold;
-	font-family: Brush Script MT;
-	padding: 0px 20px 0px 50px;
-	border-right: 1px solid white;
 }
+#menu ul li a {
+	display: block;
+	text-decoration: none;
+	color:black;
+	font-family:papyrus
+}
+#menu ul li:hover {
+	background: red;
+}
+.sub-menu {
+	display: none;
+	position: absolute;
+	margin-left: 4px !important;
+}
+#menu ul li:hover .sub-menu {
+	display: block;
+}
+
+#main #right ul{
+	text-decoration: none;
+	list-style: none;
+	color: #5512C9 ;
+	background: #D1BAD9;
+	font-family: papyrus;
+	font-weight:bold;
+}
+#footer ul{
+	background: pink;
+	list-style: none;
+	font-family: papyrus;
+	position: relative;
+	font-weight: bold;
+	display: block;
+}
+#footer ul li{
+display: inline-block;
+text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

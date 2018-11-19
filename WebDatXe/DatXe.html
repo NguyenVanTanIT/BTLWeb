@@ -2,29 +2,99 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>DICH VỤ ÐẶT XE</title>
-	<link rel="stylesheet" type="text/css" href="DatXe.css"/>
+	<title>DỊCH VỤ ĐẶT XE</title>
+	<link rel="stylesheet" type="text/css" href="datxe.css"/>
 </head>
-<body>
-	<div id="banner">Banner</div>
-	<div id="menu">Menu
-			<ul>
-			<li><a hreft = "#" title = "Trang Chủ">Trang Chủ</a></li>
-			<li><a hreft = "#" title = "Giới Thiệu">Giới Thiệu</a></li>
-			<li><a hreft = "#" title = "Chọn Lọai Xe">Chọn Lọai Xe</a></li>
-			<li><a hreft = "#" title = "Báo Giá">Báo Giá</a></li>
-			<li><a hreft = "#" title = "Thông Tin Cần Biết">Thông Tin Cần Biết</a></li>
-			<li><a hreft = "#" title = "Ý Kiến Khách Hàng">Ý Kiến Khách Hàng</a></li>
-			<li><a hreft = "#" title = "Trang Chủ">Liên Hệ</a></li>
-		</ul>
-	</div>
 
+<body>
+<div class="wrapper">
+	<div id="slogan">
+		<img src="slogan12.png" alt="slogan"/>
+	</div>
+<!-- Open Menu -->
+	<div id="menu">
+		<ul>
+			<li style="margin-left: 0px;"><a href = "#" title = "Trang Chủ">Trang Chủ</a></li>
+			<li><a href = "#" title = "Giới Thiệu">Giới Thiệu</a></li>
+			<li>
+				<a href = "#" title = "Dịch Vụ Xe">Dịch Vụ Xe</a>
+				<ul class="sub-menu">
+
+					<li><a href = "#" title = "Cho Thuê Xe 5 Chỗ" >Cho Thuê Xe 5 Chỗ</a></li>
+					<li><a href = "#" title = "Cho Thuê Xe 8 Chỗ">Cho Thuê Xe 8 Chỗ</a></li>
+					<li><a href = "#" title = "Cho Thuê Xe 16 Chỗ">Cho Thuê Xe 16 Chỗ</a></li>
+					<li><a href = "#" title = "Cho Thuê Xe 30 Chỗ">Cho Thuê Xe 30 Chỗ</a></li>
+					<li><a href = "#" title = "Cho Thuê Xe 45 Chỗ">Cho Thuê Xe 45 Chỗ</a></li>
+					
+				</ul>
+			</li>
+			<li>
+				<a href = "#" title = "Báo Giá">Báo Giá</a>
+				<ul class="sub-menu">
+					<li><a href="#">Bảng Giá Ngoại Tỉnh</a></li>
+					<li><a href="#">Bảng Giá Hà Nội</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href = "#" title = "Thông Tin">Thông Tin</a>
+				<ul class="sub-menu">
+					<li><a href="#">Quy Trình Đặt Xe</a></li>
+					<li><a href="#">Thông Tin Thanh Toán</a></li>
+					<li><a href="#">Điều Khoản</a></li>
+				</ul>
+			</li>
+			<li><a href = "#" title = "Ý Kiến Khách Hàng">Ý Kiến Khách Hàng</a></li>
+			<li><a href = "#" title = "Liên Hệ">Liên Hệ</a></li>
+		</ul>
+
+	</div>
+	<!-- Exit Menu-->
+<!-- Open Logo -->
 	<div id=logo>Logo</div>
+
+	<!-- Exit Logo -->
+	<!-- Open Main -->
 	<div id="main">
 		<div id = "left">Left</div>
-		<div id = "right">Right</div>
-	</div>
-	<div id="footer">Footer</div>
 
+
+		<div id = "right">
+			<div class="dangkyform">
+				<h1 class="formheading">ĐĂNG KÝ ĐẶT XE</h1>
+
+			<form action="#" method="post" accept-charset="utf-8" name="dangky">
+				<ul>
+					<li>Họ Tên: <input type="text" size"=30"/></li></br>
+					<li>Số Điện Thoại: <input type="text" size="10"></li></br>
+					<li>Địa Chỉ: <input type="text" size="30"/></li></br>
+					<li>Email: <input type="email" name="email"/></li></br>
+					<li>Điểm Xuất Phát: <input type="text" size="30"></li></br>
+					<li>Điểm Đến: <input type="text" size="30"></li></br>
+					<li>Chọn Xe: <select>
+					<option></option>
+					<option>Xe 5 chỗ</option>
+					<option>Xe 8 chỗ</option>
+					<option>Xe 16 chỗ</option>
+					<option>Xe 30 chỗ</option>
+					<option>Xe 45 chỗ</option>
+					</select></br></li>
+					<li>Ngày Đặt Xe: <input type="date"></li></br></li>
+					<li>Ngày Trả Xe: <input type="date"></li></br></li>
+					<li><input type="submit" value="ĐẶT XE" name="submit"/></li>
+				</ul>
+			</form>
+			</div>	
+		</div>
+	</div>
+<!--Exit Main -->
+<!-- Open footer -->
+	<div id="footer">
+		<ul>
+			<li><a href = "#" title = "Thuê Xe Du Lịch">Thuê Xe Du Lịch</a></li>
+			<li><a href = "#" title = "Liên Hệ">Liên Hệ</a></li>
+		</ul>
+	</div>
+</div>
+<!-- Exit footer -->
 </body>
 </html>
