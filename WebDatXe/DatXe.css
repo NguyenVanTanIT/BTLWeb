@@ -25,10 +25,17 @@
 
 #logo
 {
-	background: orange;
 	height: 280px;
-	width: 1000px
+	width: 1000px;
+	margin-left: -14px;
+	margin-top: 3px;
 }
+.slide{
+	height: 280px;
+	width: 1000px;
+}
+
+
 #main
 {
 	margin-top: 6px
@@ -56,6 +63,7 @@
 	color: purple;
 	clear: left;
 	line-height: 70px /*căn ra giữa*/
+ 	
 
 }
 
@@ -73,6 +81,8 @@
 	text-align: center;
 	margin-left: -4px; 
 	font-weight: bold;
+  text-decoration: none;
+
 }
 #menu ul li a {
 	display: block;
@@ -113,8 +123,17 @@ display: inline-block;
 text-decoration: none;
 }
 
-
-
+/* đấu h2 + p  Tác động vào  thằng p  nằm sau h2. 
+li > a là con
+h2 - p tác độnp vào phần p  ngang hàng với h2.
+mail li kiểu cha con
+ Dấu , tác động vào chung danh sách
+ Thuộc tính đặt trong dấu []
+ :focus chỉ mình nó
+::first-letter  đầu tiên
+:: first-line dòng đầu tiên ;
+----Luật css 
+ưu tiên  !important 
 
 
 
