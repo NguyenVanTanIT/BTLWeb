@@ -3,7 +3,7 @@
 	padding: 0px;
 }
 .wrapper {
-	font-family: Tahoma;
+	font-family: tahoma;
 	font-size: 13px;
 	width: 1000px;
 	margin: 0px auto;
@@ -45,14 +45,14 @@
 	background: brown;
 	width: 600px;
 	float: left;
-	min-height: 400px; /* chiều cao tối thiểu*/
+	min-height: 450px; /* chiều cao tối thiểu*/
 }
 #main #right
 {
-	background: blue;
+	background: #F2BDD0;
 	width: 400px;
 	float: left;
-	min-height: 400px; /* chiều cao tối thiểu*/
+	min-height: 450px; /* chiều cao tối thiểu*/
 }
 #footer
 {
@@ -88,7 +88,7 @@
 	display: block;
 	text-decoration: none;
 	color:black;
-	font-family:papyrus
+	font-family:tahoma;
 }
 #menu ul li:hover {
 	background: red;
@@ -107,13 +107,13 @@
 	list-style: none;
 	color: #5512C9 ;
 	background: #D1BAD9;
-	font-family: papyrus;
+	font-family: tahoma;
 	font-weight:bold;
 }
 #footer ul{
 	background: pink;
 	list-style: none;
-	font-family: papyrus;
+	font-family: tahoma;
 	position: relative;
 	font-weight: bold;
 	display: block;
@@ -121,6 +121,18 @@
 #footer ul li{
 display: inline-block;
 text-decoration: none;
+}
+
+#main #left ul
+{
+	margin: 0px;
+	padding: 0px;
+
+}
+#main #left ul li
+{
+	list-style: none;
+
 }
 
 /* đấu h2 + p  Tác động vào  thằng p  nằm sau h2. 
@@ -134,7 +146,10 @@ mail li kiểu cha con
 :: first-line dòng đầu tiên ;
 ----Luật css 
 ưu tiên  !important 
-
+*/
+h3{
+	text-align: center;
+}
 
 
 
