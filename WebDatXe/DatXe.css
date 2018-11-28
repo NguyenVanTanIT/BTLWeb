@@ -27,7 +27,6 @@
 {
 	height: 280px;
 	width: 1000px;
-	margin-left: -14px;
 	margin-top: 3px;
 }
 .slide{
@@ -110,18 +109,7 @@
 	font-family: tahoma;
 	font-weight:bold;
 }
-#footer ul{
-	background: pink;
-	list-style: none;
-	font-family: tahoma;
-	position: relative;
-	font-weight: bold;
-	display: block;
-}
-#footer ul li{
-display: inline-block;
-text-decoration: none;
-}
+
 
 #main #left ul
 {
