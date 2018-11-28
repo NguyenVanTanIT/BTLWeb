@@ -5,9 +5,7 @@ header{
 	background: #faa1e9;
 }
 
-#logo{
-	width: auto;
-}
+
 
 nav{
 	margin-bottom: 10px; ;
@@ -23,7 +21,7 @@ nav{
 }
 
  ul li a:hover{
-	background-color: yellow;
+	background-color: #33CC33;
 	color: red ;
 
 }
@@ -41,7 +39,9 @@ h3{
 	padding-top: 10px;
 	text-align: center;
 }
-
+.registration{
+	width: auto;
+}
 
 footer {
   background-color:#292c2f;
