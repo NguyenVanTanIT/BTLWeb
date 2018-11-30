@@ -13,20 +13,51 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
 </head>
+<style>
+	*{
+		margin: 0px;
+		padding: 0px;
+
+	}
+	a{
+		text-decoration: none;
+	}
+	.tensanpham_tencot {
+		width: 280px;
+	}
+</style>
 <body >
 	
 	<!-- logo -->
 	<header class="rounded ">
-		<div class="container ">
-			<img src="image/log13.png"class="rounded mx-auto d-block col-md-12 " alt="slogan"id="logo"/>
+		<div class="  container ">
+			<img src="#"class="rounded mx-auto d-block col-md-12 " alt="slogan"id="logo"/>
 		</div>
+		<div id="header" class="">
+			<div class="container">
+						<div class="row mt-2">
+							<div class="col-md-5 offset-md-8">
+								<ul class="pt-1">
+									<li><a href="#"><i class="fa fa-bell"></i></a></li>
+									<li><a href="User.html"><i class="fa fa-user"></i>
+									Tên ngườii dùng</a></li>
+									<li><button class="btn btn-danger">
+										Ðãng xuất
+									</button></li>
+								</ul>
+							</div>						
+						</div>					
+					</div>				
+			</div>
+		
 	</header>
 	<!-- menu -->
-	<div class="row bg-light menu  sticky-top">
-		<nav class="nav navbar-expand-lg navbar-light  rounded container">
+
+	<nav class="navbar navbar-expand-lg rounded sticky-top" id="menu">
+		<div class="container">
 			<a class="nav-link " href="#"><i class="fa fa-lg fa-home"></i></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="navbar-toggler-icon"></span></button> 			
+				<span class="fa fa-lg fa-bars text-primary" ></span></button> 			
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 					<ul class="nav nav-pills mr-auto fixed">
@@ -38,7 +69,7 @@
 							<a class="nav-link  rounded" href="#">Dich Vụ Xe</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link  rounded" href="#">Báo Giá</a>
+							<a class="nav-link  rounded" href="DatXeDuLich.php?page=baogia" ">Báo Giá</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link  rounded" href="#">Thông Tin</a>
@@ -62,11 +93,9 @@
 						<button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
 					</form>
 				</div>
-			</nav>
-		</div>
-
-		
-
+			</div>
+			
+		</nav>
 		<!-- slide -->
 		<content >
 			<div class="row">
@@ -130,25 +159,31 @@
 		<main class="rounded container">
 
 			<div class="row">
-				<div class="col-md-9">
-					<!-- khu vự đổ dữ liệu chính -->
+				<div class="col-md-9" >
+					
+				<?php 
+				$page=isset($_GET["page"])?$_GET["page"]:"";
+					if($page =='baogia')
+					 	include "dichvudatxedulich.php";
+				 ?>
+
 				</div>
+
+
 				<div class="col-md-3 bg-success rounded-right">
 					<!--Tìm kiếm nhanh-->
 					<div class="border border-danger rounded bg-primary"  style="margin-top: 25px;">
 						<div class="box_search_all clearfix" style="margin-bottom: 15px;">
 							<form method="GET" action="search-results.php">
-								<div class=" title_box_search ">TÌM NHANH</div>
+								<div class=" title_box_search">TÌM NHANH</div>
 								<div class="b_search_content">
 									<div class="b_search_row">
 										<div class="b_search_text">Loại xe</div>
-										<select class="rounded-right select_b_search " name="seat">
+										<select class="rounded-right select_b_search form-control" name="seat">
 											<option value="">--Chọn loại xe--</option>
 											<option value="4">Loại xe 4 chỗ</option>
-											<option value="7">Loại xe 7 chỗ</option>
+											<option value="8">Loại xe 8 chỗ</option>
 											<option value="16">Loại xe 16 chỗ</option>
-											<option value="24">Loại xe 24 chỗ</option>
-											<option value="29">Loại xe 29 chỗ</option>
 											<option value="35">Loại xe 35 chỗ</option>
 											<option value="45">Loại xe 45 chỗ</option>
 										</select>
@@ -156,39 +191,40 @@
 									</div>
 									<div class="b_search_row">
 										<div class="b_search_text">Nhãn hiệu</div>
-										<select class="select_b_search" name="label">
+										<select class="select_b_search form-control" name="label">
 											<option value="">-Chọn hãng xe--</option>
 										</select>
 										<div class="clear_left"><span></span></div>
 									</div>
 									<div class="b_search_row">
 										<div class="b_search_text">Điểm đi</div>
-										<select name="from" class="select_b_search">
+										<select name="from" class="form-control select_b_search">
 											<option value="">--Chọn điểm đi--</option>
 										</select>
 										<div class="clear_left"><span></span></div>
 									</div>
 									<div class="b_search_row">
 										<div class="b_search_text">Điểm đến</div>
-										<select name="to" class="select_b_search">
+										<select name="to" class="form-control select_b_search">
 											<option value="">--Chọn điểm đến--</option>
 										</select>
 										<div class="clear_left"><span></span></div>
-									</div>
-									<div class="row ">
-										<button type="submit" class="input_b_search btn btn-lint offset-md-7" style="margin-top: 15px;">Tìm xe</button> 
 
+
+										<button type="submit" class="input_b_search btn btn-lint col-md-6 offset-md-3" style="margin-top: 20px;">Tìm xe</button> 
 									</div>
-								</div>
-							</form>
+								</form>
+							</div>
 						</div>
 					</div>
+
 					<!-- Tìm kiếm theo xe -->
 
 					<div class=" border border-danger rounded bg-light box_search_2_all" style="margin-top: 25px;">
 						<div class="title_box_support">THUÊ XE 4 ĐẾN 45 CHỖ</div>
 						<div class="b_car_type_content">    
-							<ul class="none_tag ul_carcompany">
+							<ul class="none_tag ul_carcompany" style="list-style: none; text-indent: 10px;">
+						
 								<li class="car_type">
 									<a href="#">Xe du lịch 45 chỗ</a>
 								</li>
@@ -196,13 +232,10 @@
 									<a href="#">Xe du lịch 35 chỗ</a>
 								</li>
 								<li class="car_type">
-									<a href="#">Xe du lịch 29 chỗ</a>
-								</li>
-								<li class="car_type">
 									<a href="#">Xe du lịch 16 chỗ</a>
 								</li>
 								<li class="car_type">
-									<a href="#">Xe du lịch 7 chỗ</a>
+									<a href="#">Xe du lịch 8 chỗ</a>
 								</li>
 								<li class="car_type">
 									<a href="#">Thuê xe 4 chỗ</a>
@@ -211,9 +244,6 @@
 						</div>
 						<div class="clear_left"></div>
 					</div>
-
-
-
 					<div class="dangkyform">
 						<h3 class="formheading">ĐĂNG KÝ ĐẶT XE</h3>
 						<form>
@@ -238,7 +268,7 @@
 										<option selected>Xe 4 Chỗ</option>
 										<option>Xe 8 chỗ</option>
 										<option>Xe 16 chỗ</option>
-										<option>Xe 30 chỗ</option>
+										<option>Xe 35 chỗ</option>
 										<option>Xe 45 chỗ</option>
 									</select>
 								</div>
@@ -297,59 +327,19 @@
 					<p>
 						<div class="textwidget"><p>Các Dịch Vụ Cho Thuê Xe:</p>
 							<ul>
-								<li><p href="#">Bảng Giá Thuê Xe Đi Tỉnh</p></li>
-								<li><p href="#">Cho Thuê Xe Hoa Đám Cưới</p></li>
 								<li><p href="#">Hợp Đồng Thuê Xe Dài Hạn</p></li>
 								<li><p href="#">Thuê Xe 4-7 Chỗ Có Tài Xế</p></li>
 								<li><p href="#">Thuê Xe 16 Chỗ Có Tài Xế</p></li>
-								<li><p href="#">Thuê Xe Bán Tải</p></li>
 								<li><p href="#">Cho Thuê Tài Xế Lái Xe</p></li>
 								<li><p href="#">Thuê Xe Đi Du Lịch Tự Túc</p></li>
 							</ul>
 						</div>
 					</div>
 				</div>
-			</footer>	
-			<div id="menu" >
-				<div class="container" >		
-					<div class="row">
-						<ul class="nav nav-pills mr-auto fixed" >
-							<li class="nav-item">
-								<a class="nav-link " href="#"><i class="fa fa-lg fa-home"></i></a>
-							</li>	
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Giới thiệu</a>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="#">Trung tâm</a>
-									<a class="dropdown-item" href="#">Giảng viên</a>
-									<a class="dropdown-item" href="#">Cảm nhận</a>
-								</div>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link " href="#">Mỹ thuật</a>
-							</li>			    
-							<li class="nav-item">
-								<a class="nav-link" href="#">Múa</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link " href="#">Nhảy</a>
-
-							</li>
-							<li class="nav-item">
-								<a class="nav-link " href="#">Hát</a>
-
-							</li>
-							<li class="nav-item">
-								<a class="nav-link " href="#">Võ thuật</a>
-							</li>		
-							<form class="form-inline my-2 my-md-0">
-								<input class="form-control" type="text" placeholder="Tìm kiếm" aria-label="Search">
-								<button class="btn btn-warning search my-2 my-md-0">Tìm kiếm</button>
-							</form>  						    					
-
-						</ul>
-					</div>
-					<script src="js/jquery.min.js"></script>
-					<script src="bootstrap/js/bootstrap.min.js"></script>
-				</body>
-				</html>
+			</footer>
+ 
+			</script>
+			<script src="js/jquery.min.js"></script>
+			<script src="bootstrap/js/bootstrap.min.js"></script>
+		</body>
+		</html>
