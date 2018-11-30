@@ -1,17 +1,12 @@
 
 header{
 	margin-top: 5px;
-	margin-bottom: 5px;
+
 	background: #faa1e9;
 }
 
 
-
-nav{
-	margin-bottom: 10px; ;
-}
-
- ul li a{
+navul li a{
 	font-size: 20px;
 	display: block;
 	color: yellow;
@@ -20,7 +15,12 @@ nav{
 
 }
 
- ul li a:hover{
+nav ul li a:hover{
+	background-color: #33CC33;
+	color: red ;
+
+}
+nav a:hover{
 	background-color: #33CC33;
 	color: red ;
 
@@ -35,12 +35,28 @@ main
 	width: 100%;
 }
 
-h3{
-	padding-top: 10px;
-	text-align: center;
+.title_box_search{
+	margin-top: 10px;
+	text-align:  center;
+	font:bold 16px sans-serif;
+	color: #fff;
+	
 }
-.registration{
-	width: auto;
+
+.b_search_text
+{
+	margin-top: 12px;
+	clear: left;
+	float: left;
+	margin-left: 10px;
+	color: #fff;
+	font: bold 14px sans-serif;
+}
+.select_b_search
+{
+	margin-top: 15px;
+	float: left;
+	text-align: right;
 }
 
 footer {
@@ -158,14 +174,3 @@ div.social-links {
   margin-right:5px;
   margin-bottom:5px;
 }
-
-
-
-
-
-
-
-
-
-
-
