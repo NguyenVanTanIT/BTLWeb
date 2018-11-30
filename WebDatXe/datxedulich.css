@@ -6,10 +6,10 @@ header{
 }
 
 
-navul li a{
+nav ul li a{
 	font-size: 20px;
 	display: block;
-	color: yellow;
+	color: blue;
 	width: auto;
 	border-radius: 2px; 
 
@@ -47,7 +47,6 @@ main
 {
 	margin-top: 12px;
 	clear: left;
-	float: left;
 	margin-left: 10px;
 	color: #fff;
 	font: bold 14px sans-serif;
@@ -55,7 +54,6 @@ main
 .select_b_search
 {
 	margin-top: 15px;
-	float: left;
 	text-align: right;
 }
 

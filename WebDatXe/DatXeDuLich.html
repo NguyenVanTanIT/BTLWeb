@@ -22,8 +22,9 @@
 		</div>
 	</header>
 	<!-- menu -->
-	<div class="row bg-light menu ">
-		<nav class="nav navbar-expand-lg navbar-light  rounded container">
+	<div class="row bg-light menu sticky-top">
+		<nav class="nav navbar-expand-lg navbar-light  rounded container ">
+
 			<a class="nav-link " href="#"><i class="fa fa-lg fa-home"></i></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 				<span class="navbar-toggler-icon"></span></button> 			
@@ -35,7 +36,7 @@
 
 						</li>
 						<li class="nav-item">
-							<a class="nav-link  rounded" href="#">Dich Vụ Xe</a>
+							<a class="nav-link  " href="#">Dich Vụ Xe</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link  rounded" href="#">Báo Giá</a>
@@ -58,8 +59,11 @@
 						</li>
 					</ul>
 					<form class="form-inline">
-						<input class="form-control mr-sm-2" type="text" /> 
-						<button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+						<input class="form-control mr-sm-2" type="text" />
+						<form action="/action_page.php" method="get">
+						<button  class="btn btn-primary my-2 my-sm-0" type="submit" formaction="file:///C:/xampp/htdocs/BaiTapLonWeb/BTLWeb/WebDatXe/php/formdatxe.php" >Search</button>
+					</form>
+						
 					</form>
 				</div>
 			</nav>
@@ -135,7 +139,7 @@
 				</div>
 				<div class="col-md-3 bg-success rounded-right">
 					<!--Tìm kiếm nhanh-->
-					<div class="border border-danger rounded bg-primary"  style="margin-top: 25px;">
+					<div class="border border-danger rounded bg-primary"style="margin-top: 25px;">
 						<div class="box_search_all clearfix" style="margin-bottom: 15px;">
 							<form method="GET" action="search-results.php">
 								<div class=" title_box_search ">TÌM NHANH</div>
@@ -175,13 +179,17 @@
 										</select>
 										<div class="clear_left"><span></span></div>
 									</div>
-									<input type="submit" class="input_b_search" style="margin-top: 15px;" value="Tìm xe"> 
+									<div class="row">
+										<div class="col-md-12">
+											<button  type="submit" class="input_b_search btn btn-warning offset-md-7" style="margin-top: 15px;" >Tìm xe</button>
+
+										</div>
+									</div>
 								</div>
 							</form>
 						</div>
 					</div>
 					<!-- Tìm kiếm theo xe -->
-
 					<div class=" border border-danger rounded bg-light box_search_2_all" style="margin-top: 25px;">
 						<div class="title_box_support">THUÊ XE 4 ĐẾN 45 CHỖ</div>
 						<div class="b_car_type_content">    
@@ -208,9 +216,6 @@
 						</div>
 						<div class="clear_left"></div>
 					</div>
-
-
-
 					<div class="dangkyform">
 						<h3 class="formheading">ĐĂNG KÝ ĐẶT XE</h3>
 						<form>
@@ -306,47 +311,7 @@
 						</div>
 					</div>
 				</div>
-			</footer>	
-			<div id="menu" >
-				<div class="container" >		
-					<div class="row">
-						<ul class="nav nav-pills mr-auto fixed" >
-							<li class="nav-item">
-								<a class="nav-link " href="#"><i class="fa fa-lg fa-home"></i></a>
-							</li>	
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Giới thiệu</a>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="#">Trung tâm</a>
-									<a class="dropdown-item" href="#">Giảng viên</a>
-									<a class="dropdown-item" href="#">Cảm nhận</a>
-								</div>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link " href="#">Mỹ thuật</a>
-							</li>			    
-							<li class="nav-item">
-								<a class="nav-link" href="#">Múa</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link " href="#">Nhảy</a>
+		
+		</body>
+		</html>
 
-							</li>
-							<li class="nav-item">
-								<a class="nav-link " href="#">Hát</a>
-
-							</li>
-							<li class="nav-item">
-								<a class="nav-link " href="#">Võ thuật</a>
-							</li>		
-							<form class="form-inline my-2 my-md-0">
-								<input class="form-control" type="text" placeholder="Tìm kiếm" aria-label="Search">
-								<button class="btn btn-warning search my-2 my-md-0">Tìm kiếm</button>
-							</form>  						    					
-
-						</ul>
-					</div>
-					<script src="js/jquery.min.js"></script>
-					<script src="bootstrap/js/bootstrap.min.js"></script>
-				</body>
-				</html>
