@@ -88,6 +88,7 @@ main
   margin-top: 15px;
   text-align: center;
   font: bold 20px sans-serif;
+<<<<<<< HEAD
 
 }
 .car_type{
@@ -95,6 +96,15 @@ main
   padding-top: 10px;
 
 }
+=======
+
+}
+.car_type{
+  font: italic 18px sans-serif;
+  padding-top: 10px;
+
+}
+>>>>>>> dfca9b231f663d2155b2d6811ee86786618d6a0f
 .car_type a{
   text-decoration: none;
 }

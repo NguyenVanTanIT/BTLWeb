@@ -336,9 +336,14 @@
 						</div>
 					</div>
 				</div>
+<<<<<<< HEAD:WebDatXe/DatXeDuLich.php
 			</footer>
  
 			</script>
+=======
+			</footer>	
+
+>>>>>>> dfca9b231f663d2155b2d6811ee86786618d6a0f:WebDatXe/DatXeDuLich.html
 			<script src="js/jquery.min.js"></script>
 			<script src="bootstrap/js/bootstrap.min.js"></script>
 		</body>
