@@ -42,7 +42,7 @@
 									<li><a href="User.html"><i class="fa fa-user"></i>
 									Tên ngườii dùng</a></li>
 									<li><button class="btn btn-danger">
-										Ðãng xuất
+										Ðăng xuất
 									</button></li>
 								</ul>
 							</div>						
@@ -69,7 +69,7 @@
 							<a class="nav-link  rounded" href="#">Dich Vụ Xe</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link  rounded" href="DatXeDuLich.php?page=baogia" ">Báo Giá</a>
+							<a class="nav-link  rounded" href="DatXeDuLich.php?page=baogia">Báo Giá</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link  rounded" href="#">Thông Tin</a>
@@ -165,6 +165,10 @@
 				$page=isset($_GET["page"])?$_GET["page"]:"";
 					if($page =='baogia')
 					 	include "dichvudatxedulich.php";
+					 if($page =='abcxyz')
+					 	include "php/formdatxe.php";
+
+
 				 ?>
 
 				</div>

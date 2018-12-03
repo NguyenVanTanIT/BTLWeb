@@ -108,6 +108,10 @@ main
 .car_type a{
   text-decoration: none;
 }
+.datxe{
+  width: 1000px;
+  height: 1000px;
+}
 footer {
   background-color:#292c2f;
   box-shadow:0 1px 1px 0 rgba(0, 0, 0, 0.12);
