@@ -13,19 +13,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
 </head>
-<style>
-	*{
-		margin: 0px;
-		padding: 0px;
-
-	}
-	a{
-		text-decoration: none;
-	}
-	.tensanpham_tencot {
-		width: 280px;
-	}
-</style>
 <body >
 	
 	<!-- logo -->
@@ -160,20 +147,17 @@
 
 			<div class="row">
 				<div class="col-md-9" >
-					
-				<?php 
+					<div class="row">
+							<?php 
 				$page=isset($_GET["page"])?$_GET["page"]:"";
 					if($page =='baogia')
 					 	include "dichvudatxedulich.php";
 					 if($page =='abcxyz')
 					 	include "php/formdatxe.php";
-
-
 				 ?>
-
+					</div>
+			
 				</div>
-
-
 				<div class="col-md-3 bg-success rounded-right">
 					<!--Tìm kiếm nhanh-->
 					<div class="border border-danger rounded bg-primary"  style="margin-top: 25px;">
@@ -340,14 +324,11 @@
 						</div>
 					</div>
 				</div>
-<<<<<<< HEAD:WebDatXe/DatXeDuLich.php
 			</footer>
  
 			</script>
-=======
 			</footer>	
 
->>>>>>> dfca9b231f663d2155b2d6811ee86786618d6a0f:WebDatXe/DatXeDuLich.html
 			<script src="js/jquery.min.js"></script>
 			<script src="bootstrap/js/bootstrap.min.js"></script>
 		</body>
