@@ -16,11 +16,11 @@
 <body >
 	
 	<!-- logo -->
-	<header class="rounded ">
-		<div class="  container ">
-			<img src="#"class="rounded mx-auto d-block col-md-12 " alt="slogan"id="logo"/>
-		</div>
-		<div id="header" class="">
+	<header class="rounded id=">
+		<img src="image/banner.jpg" class="rounded mx-auto d-block col-md-12 " alt="slogan" style="
+    padding-right: 0px;
+    padding-left: 0px;">
+		<!-- <div id="header" class="">
 			<div class="container">
 						<div class="row mt-2">
 							<div class="col-md-5 offset-md-8">
@@ -35,34 +35,34 @@
 							</div>						
 						</div>					
 					</div>				
-			</div>
+			</div> -->
 		
 	</header>
 	<!-- menu -->
 
 	<nav class="navbar navbar-expand-lg rounded sticky-top" id="menu">
 		<div class="container">
-			<a class="nav-link " href="#"><i class="fa fa-lg fa-home"></i></a>
+			<a class="nav-link " href="DatXeDuLich.php?page=trangchu"><i class="fa fa-lg fa-home"></i></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 				<span class="fa fa-lg fa-bars text-primary" ></span></button> 			
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 					<ul class="nav nav-pills mr-auto fixed">
 						<li class="nav-item">
-							<a class="nav-link rounded" href="#">Giới Thiệu </a>
+							<a class="nav-link rounded" href="DatXeDuLich.php?page=trangchu">Giới Thiệu </a>
 
 						</li>
 						<li class="nav-item">
-							<a class="nav-link  rounded" href="#">Dich Vụ Xe</a>
+							<a class="nav-link  rounded" href="DatXeDuLich.php?page=trangchu">Dich Vụ Xe</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link  rounded" href="DatXeDuLich.php?page=baogia">Báo Giá</a>
+							<a class="nav-link  rounded" href="DatXeDuLich.php?page=trangchu">Báo Giá</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link  rounded" href="#">Thông Tin</a>
+							<a class="nav-link  rounded" href="DatXeDuLich.php?page=trangchu">Thông Tin</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link  rounded" href="#">Liên Hệ</a>
+							<a class="nav-link  rounded" href="DatXeDuLich.php?page=datxe">Liên Hệ</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle rounded" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Dropdown link</a>
@@ -150,9 +150,9 @@
 					<div class="row">
 							<?php 
 				$page=isset($_GET["page"])?$_GET["page"]:"";
-					if($page =='baogia')
-					 	include "dichvudatxedulich.php";
-					 if($page =='abcxyz')
+				    if($page =='trangchu')
+					 	include "trangchu.php";
+					 if($page =='datxe')
 					 	include "php/formdatxe.php";
 				 ?>
 					</div>

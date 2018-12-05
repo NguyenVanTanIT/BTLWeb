@@ -1,10 +1,4 @@
 
-header{
-	margin-top: 5px;
-	background: #faa1e9;
-}
-
-
 #header h2{
 	text-shadow: 2px 2px 8px #FF0000;
 	font-family: WildWest;
@@ -28,7 +22,7 @@ header{
 
 #menu{
   padding: 0px;
-  background: coral;
+  background: red;
   width: 100%;
 }
 
@@ -36,21 +30,22 @@ header{
 nav ul li a{
 	font-size: 20px;
 	display: block;
-	color: blue;
+	color: #fff;
 	width: auto;
   border-radius: 2px; 
+
   
 
 }
 
 nav ul li a:hover{
-	background-color: #33CC33;
-	color: red ;
+	background-color: #c30404;
+	color: #fff ;
 
 }
 nav a:hover{
-	background-color: #33CC33;
-	color: red ;
+	background-color: #c30404;
+	color:  #fff ;
 
 }
 
