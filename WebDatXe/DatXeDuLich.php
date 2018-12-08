@@ -75,10 +75,36 @@
 							</div>
 						</li>
 					</ul>
+					<?php 
+						$user = isset($_GET["user"]) ? $_GET["user"] : "";
+						if (isset($_GET["user"])) {
+					?>
+					
 					<form class="form-inline">
-						<input class="form-control mr-sm-2" type="text" /> 
-						<button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+						<a href="" class="btn btn-outline-primary">welcome: <?php echo $user ?></a>
+						<a class="nav-link  rounded" href="DatXeDuLich.php?page=logout">Đăng Xuất</a> 
 					</form>
+					
+					<?php	
+					} 
+					else {	
+					?>
+					<form class="form-inline">
+						<a class="nav-link  rounded" href="DatXeDuLich.php?page=dangnhap">Đăng Nhập</a> 
+						<a class="nav-link  rounded" href="DatXeDuLich.php?page=dangky">Đăng Ký</a> 
+					</form>
+					<?php } ?>
+
+
+					<?php 
+						// cái này ó gì mà phân 
+						// trong một trang web có hai phần là admin với client giao diện ng dùng ý, còn admin sẽ dùng teamplet quản lý dữ liệu của trang ưeb, chỉ admin mí dc vào, 
+					//tư kiếm giao diện admin về, rồi code linh tinh như trang giao diện ng dùng này, có mõi bảng uủe thì admin chỉ cần quản lý u
+					// k có dữ liệu thì quản lý cái gì, chả liên quản gì, kiể
+						$page = isset($_GET["page"]) ? $_GET["page"] : "";
+						if($page=="logout")
+							header("location: DatXeDuLich.php");
+					 ?>
 				</div>
 			</div>
 			
@@ -160,9 +186,34 @@
 					 	include "php/gioithieu.php";
 					 if($page =='baogia')
 					 	include "php/baogia.php";
+					 if($page =='dangnhap')
+					 	include "login.html";
+					 if($page =='dangky')
+					 	include "register.html";
 				 ?>
 					</div>
-			
+					
+					<?php 
+						$act = isset($_GET["act"]) ? $_GET["act"] : "";
+					?>
+					<?php
+						if ($act == "false"){
+			 		?>
+			 			<div class="alert alert-danger" style="text-align: center">
+			 				<?php echo "sai tài khoản hoặc mật khẩu"; ?>
+			 			</div>
+			 		<?php 
+			 		}		
+			 		?>
+			 		<?php
+						if ($act == "false-role"){
+			 		?>
+			 			<div class="alert alert-danger" style="text-align: center">
+			 				<?php echo "k dc truy cap"; ?>
+			 			</div>
+			 		<?php 
+			 		}		
+			 		?>
 				</div>
 				<div class="col-md-3 bg-success rounded-right">
 					<!--Tìm kiếm nhanh-->
@@ -337,5 +388,21 @@
 
 			<script src="js/jquery.min.js"></script>
 			<script src="bootstrap/js/bootstrap.min.js"></script>
+
+			<!-- Subiz -->
+			<script>
+			(function(s, u, b, i, z){
+			  u[i]=u[i]||function(){
+			    u[i].t=+new Date();
+			    (u[i].q=u[i].q||[]).push(arguments);
+			  };
+			  z=s.createElement('script');
+			  var zz=s.getElementsByTagName('script')[0];
+			  z.async=1; z.src=b; z.id='subiz-script';
+			  zz.parentNode.insertBefore(z,zz);
+			})(document, window, 'https://widgetv4.subiz.com/static/js/app.js', 'subiz');
+			subiz('setAccount', 'acqesyywfdutbqwxxnsw');
+			</script>
+			<!-- End Subiz -->
 		</body>
 		</html>

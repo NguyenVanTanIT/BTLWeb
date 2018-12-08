@@ -13,7 +13,7 @@
 				<a href="Xe-4-chỗ-Madza-CX5.html" title="Xe 4 chỗ Mazda CX5">
 					<h5>Xe 4 chỗ Mazda CX5</h5></a>
 					<h5>Liên Hệ: 016868686868</h5>
-					<a class="datxe" href="DatXeDuLich.php?page=abcxyz"><h5>Đặt Xe</h5></a>
+					<a class="datxe" href="DatXeDuLich.php?page=datxe"><h5>Đặt Xe</h5></a>
 
 				</h2>
 			</div>
