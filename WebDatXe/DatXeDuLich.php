@@ -20,22 +20,6 @@
 		<img src="image/banner.jpg" class="rounded mx-auto d-block col-md-12 " alt="slogan" style="
     padding-right: 0px;
     padding-left: 0px;">
-		<!-- <div id="header" class="">
-			<div class="container">
-						<div class="row mt-2">
-							<div class="col-md-5 offset-md-8">
-								<ul class="pt-1">
-									<li><a href="#"><i class="fa fa-bell"></i></a></li>
-									<li><a href="User.html"><i class="fa fa-user"></i>
-									Tên ngườii dùng</a></li>
-									<li><button class="btn btn-danger">
-										Ðăng xuất
-									</button></li>
-								</ul>
-							</div>						
-						</div>					
-					</div>				
-			</div> -->
 		
 	</header>
 	<!-- menu -->
@@ -52,8 +36,15 @@
 							<a class="nav-link rounded" href="DatXeDuLich.php?page=gioithieu">Giới Thiệu </a>
 
 						</li>
-						<li class="nav-item">
-							<a class="nav-link  rounded" href="DatXeDuLich.php?page=">Dich Vụ Xe</a>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle rounded" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Dịch Vụ Xe</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="#">Xe 4 chỗ</a>
+								<a class="dropdown-item" href="#">Xe 8 chỗ</a> 
+								<a class="dropdown-item" href="#">Xe 16 chỗ</a>
+								<a class="dropdown-item" href="#">Xe 35 chỗ</a> 
+								<a class="dropdown-item" href="#">Xe 45 chỗ</a>
+							</div>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link  rounded" href="DatXeDuLich.php?page=baogia">Báo Giá</a>
@@ -64,16 +55,7 @@
 						<li class="nav-item">
 							<a class="nav-link  rounded" href="DatXeDuLich.php?page=lienhe">Liên Hệ</a>
 						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle rounded" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Dropdown link</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<a class="dropdown-item" href="#">Action</a>
-								<a class="dropdown-item" href="#">Another action</a> 
-								<a class="dropdown-item" href="#">Something else here</a>
-								<div class="dropdown-divider"></div> 
-								<a class="dropdown-item" href="#">Separated link</a>
-							</div>
-						</li>
+						
 					</ul>
 					<?php 
 						$user = isset($_GET["user"]) ? $_GET["user"] : "";
@@ -97,10 +79,7 @@
 
 
 					<?php 
-						// cái này ó gì mà phân 
-						// trong một trang web có hai phần là admin với client giao diện ng dùng ý, còn admin sẽ dùng teamplet quản lý dữ liệu của trang ưeb, chỉ admin mí dc vào, 
-					//tư kiếm giao diện admin về, rồi code linh tinh như trang giao diện ng dùng này, có mõi bảng uủe thì admin chỉ cần quản lý u
-					// k có dữ liệu thì quản lý cái gì, chả liên quản gì, kiể
+						
 						$page = isset($_GET["page"]) ? $_GET["page"] : "";
 						if($page=="logout")
 							header("location: DatXeDuLich.php");

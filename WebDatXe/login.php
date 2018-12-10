@@ -13,9 +13,19 @@
 	$level=mysqli_query($con,"select level from users where username='$username' and password='$password'");
 	if(mysqli_num_rows($ketqua)==1)
 	{
+// 		$tr="2";
+// 		if(strpos($level,$tr) !== false)
+// 		{
+// 			 $_SESSION["username"] = $username;
+// 		header('location:admin/index.php');
+
+// 		}
+// else{
+
 		$_SESSION["username"] = $username;
 		header('location:DatXeDuLich.php?user='.$username);
-	}
+	// }
+}
 	else {
 		header('location:DatXeDuLich.php?page=dangnhap&act=false');
 	}
