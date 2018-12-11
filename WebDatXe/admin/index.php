@@ -136,13 +136,14 @@
 				<li class="active">Dashboard</li>
 			</ol>
 		</div><!--/.row-->
-		<div class="row">
-			<?php 
+		<div class="row ">
+			<div style="padding-left: 30px; padding-top: 30px;">
+				<?php 
 						$page=isset($_GET["page"])?$_GET["page"]:"";
 						if($page =='')
-							include('xe.php');
+							include('xe/xe.php');
 						if($page =='xe')
-							include "xe.php";
+							include "xe/xe.php";
 						if($page =='khachhang')
 							include "khachhang.php";
 						if($page =='donhang')
@@ -151,6 +152,8 @@
 						
 						
 						?>
+			</div>
+			
 		</div>	
 	</div>	<!--/.main-->
 	

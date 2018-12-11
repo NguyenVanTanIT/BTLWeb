@@ -1,9 +1,8 @@
 
   #menu{
     padding: 0px;
-    background: black;
+    background: red;
     width: 100%; 
-    margin-bottom: 10px;
   }
 
   nav ul li a{
@@ -12,9 +11,11 @@
    color: #fff;
    width: auto;
    border-radius: 2px; 
-
+  border-left: : 1px solid #f6f6f6;
 
  }
+
+
  nav a:hover{
   background-color: #c30404;
   color:  #fff ;
@@ -29,7 +30,8 @@ nav ul li a:hover{
 }
 /*---slide------*/
 .slide{
-  margin-top: 100px;
+  margin-top: 5px;
+  background: yellow;
 }
 
 /* Phần main*/

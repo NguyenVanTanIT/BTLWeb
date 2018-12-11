@@ -14,7 +14,7 @@
 						<p><strong>Chi tiết</strong></p>
 					</div>
 					<div class="col-md-5">
-						<img class="d-block w-100" alt="Carousel Bootstrap Second" src="../image/slide_2a.jpg">
+						<img class="d-block w-100" alt="Carousel Bootstrap Second" src="image/slide_2a.jpg">
 					</div>
 				</div>
 				<div class="row">
@@ -28,8 +28,8 @@
 								Quý khách có thể đặt thuê xe trực tiếp qua website này hoặc bằng các phương thức sau:<br>
 								– Ký hợp đồng tại địa chỉ của khách hàng.<br>
 								– Ký hợp đồng qua Email :&nbsp;dichvuxetantrang@gmail.com<br>
-								– Ký hợp đồng tại địa chỉ Công ty chúng tôi : Số 77, tổ 3, phố Phú Đô, P. Phú Đô, Q. Nam Từ Liêm, HN<br>
-							– Liên hệ đặt xe : 0963.927.819 – 0972.100.952</td>
+								– Ký hợp đồng tại địa chỉ Công ty chúng tôi :  175 Tây Sơn-Đống Đa,Hà Nội,Việt Nam <br>
+							– Liên hệ đặt xe : 0963.615.555 – 039.8712.777</td>
 						</tr>
 					</div>
 				</div>

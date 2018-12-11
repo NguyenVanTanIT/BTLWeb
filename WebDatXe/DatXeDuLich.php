@@ -27,7 +27,7 @@
 	<nav class="navbar navbar-expand-lg  sticky-top" id="menu">
 		<div class="container">
 			<a class="nav-link text-white" href="DatXeDuLich.php?page=trangchu"><i class="fa fa-lg fa-home"></i></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<button class="navbar-toggler" type="button " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 				<span class="fa fa-lg fa-bars text-white" ></span></button> 			
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
@@ -39,11 +39,11 @@
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle rounded" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Dịch Vụ Xe</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<a class="dropdown-item" href="#">Xe 4 chỗ</a>
-								<a class="dropdown-item" href="#">Xe 8 chỗ</a> 
-								<a class="dropdown-item" href="#">Xe 16 chỗ</a>
-								<a class="dropdown-item" href="#">Xe 35 chỗ</a> 
-								<a class="dropdown-item" href="#">Xe 45 chỗ</a>
+								<a class="dropdown-item" href="DatXeDuLich.php?page=tongxe4cho">Xe 4 chỗ</a>
+								<a class="dropdown-item" href="DatXeDuLich.php?page=tongxe8cho">Xe 8 chỗ</a> 
+								<a class="dropdown-item" href="DatXeDuLich.php?page=tongxe16cho">Xe 16 chỗ</a>
+								<a class="dropdown-item" href="DatXeDuLich.php?page=tongxe35cho">Xe 35 chỗ</a> 
+								<a class="dropdown-item" href="DatXeDuLich.php?page=tongxe45cho">Xe 45 chỗ</a>
 							</div>
 						</li>
 						<li class="nav-item">
@@ -62,18 +62,18 @@
 					if (isset($_GET["user"])) {
 						?>
 						
-						<form class="form-inline">
+						<form class="form-inline ">
 							<a href="" class="btn btn-outline-primary">welcome: <?php echo $user ?></a>
-							<a class="nav-link  rounded" href="DatXeDuLich.php?page=logout">Đăng Xuất</a> 
+							<a class="nav-link  rounded text-white" href="DatXeDuLich.php?page=logout">Đăng Xuất</a> 
 						</form>
 						
 						<?php	
 					} 
 					else {	
 						?>
-						<form class="form-inline">
-							<a class="nav-link  rounded" href="DatXeDuLich.php?page=dangnhap">Đăng Nhập</a> 
-							<a class="nav-link  rounded" href="DatXeDuLich.php?page=dangky">Đăng Ký</a> 
+						<form class="form-inline  ">
+							<a class="nav-link  rounded text-white" href="DatXeDuLich.php?page=dangnhap">Đăng Nhập</a> 
+							<a class="nav-link  rounded text-white" href="DatXeDuLich.php?page=dangky">Đăng Ký</a> 
 						</form>
 					<?php } ?>
 
@@ -89,84 +89,38 @@
 			
 		</nav>
 		<!-- slide -->
-		<div class="col-md-12 slide" style="padding-right: 0px;padding-left: 0px;">
-			<div class="carousel  " id="carousel-683226">
-				<ol class="carousel-indicators">
-					<li data-slide-to="0" data-target="#carousel-683226" class="active">
-					</li>
-					<li data-slide-to="1" data-target="#carousel-683226" class="">
-					</li>
-					<li data-slide-to="2" data-target="#carousel-683226" class="">
-					</li>
-					<li data-slide-to="3" data-target="#carousel-683226" class="">
-					</li>
-					<li data-slide-to="4" data-target="#carousel-683226" class="">
-					</li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img class="d-block w-100" alt="Carousel Bootstrap First" src="image/slide_1a.jpg">
-						<div class="carousel-caption">
-							<h4>
-								First Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" alt="Carousel Bootstrap Second" src="image/slide_2a.jpg">
-						<div class="carousel-caption">
-							<h4>
-								Second Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" alt="Carousel Bootstrap Third" src="image/slide_3a.jpg">
-						<div class="carousel-caption">
-							<h4>
-								Third Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" alt="Carousel Bootstrap Third" src="image/slide_4a.jpg">
-						<div class="carousel-caption">
-							<h4>
-								Third Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img class="d-block w-100" alt="Carousel Bootstrap Third" src="image/slide_5a.jpg">
-						<div class="carousel-caption">
-							<h4>
-								Third Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
-					</div>
-				</div> <a class="carousel-control-prev" href="#carousel-683226" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-683226" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
-			</div>
-		</div>
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active active">
+      <img class="d-block w-100" src="image/slide_5a.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="image/slide_4a.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="image/slide_3a.jpg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="image/slide_2a.jpg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="image/slide_1a.jpg" alt="Third slide">
+    </div>
+	  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+     <li data-target="#demo" data-slide-to="3"></li>
+      <li data-target="#demo" data-slide-to="4"></li>
+  </ul>
+  </a>
+  </div>
+</div>
 
 		<main class="rounded container">
 
 			<div class="row">
-				<div class="col-md-9" >
+				<div class="col-md-9" style="padding-top: 30px;" >
 					<div class="row">
 						<?php 
 						$page=isset($_GET["page"])?$_GET["page"]:"";
@@ -188,6 +142,16 @@
 							include "register.html";
 						if($page =='chitietxe')
 							include('php/chitietxe.php');
+						if($page =='tongxe4cho')
+							include('php/tong_xe_4_cho.php');
+						if($page =='tongxe8cho')
+							include('php/tong_xe_8_cho.php');
+						if($page =='tongxe16cho')
+							include('php/tong_xe_16_cho.php');
+						if($page =='tongxe35cho')
+							include('php/tong_xe_35_cho.php');
+						if($page =='tongxe45cho')
+							include('php/tong_xe_45_cho.php');
 						
 						?>
 					</div>
@@ -270,19 +234,19 @@
 							<ul class="none_tag ul_carcompany" style="list-style: none; text-indent: 10px;">
 								
 								<li class="car_type">
-									<a href="#">Xe du lịch 45 chỗ</a>
+									<a href="DatXeDuLich.php?page=tongxe4cho">Xe du lịch 4 chỗ</a>
 								</li>
 								<li class="car_type">
-									<a href="#">Xe du lịch 35 chỗ</a>
+									<a href="DatXeDuLich.php?page=tongxe8cho">Xe du lịch 35 chỗ</a>
 								</li>
 								<li class="car_type">
-									<a href="#">Xe du lịch 16 chỗ</a>
+									<a href="DatXeDuLich.php?page=tongxe16cho">Xe du lịch 16 chỗ</a>
 								</li>
 								<li class="car_type">
-									<a href="#">Xe du lịch 8 chỗ</a>
+									<a href="DatXeDuLich.php?page=tongxe35cho">Xe du lịch 8 chỗ</a>
 								</li>
 								<li class="car_type">
-									<a href="#">Thuê xe 4 chỗ</a>
+									<a href="DatXeDuLich.php?page=tongxe45cho">Thuê xe 45 chỗ</a>
 								</li>
 							</ul>       
 						</div>
@@ -359,7 +323,7 @@
 						<p><span class="new-line-span">175 Tây Sơn-Đống Đa</span> Hà Nội,Việt Nam</p>
 					</div>
 					<div><i class="fa fa-phone footer-contacts-icon"></i>
-						<p class="footer-center-info email text-left"> +03 9871 2777</p>
+						<p class="footer-center-info email text-left"> +0963 651 555</p>
 					</div>
 					<div><i class="fa fa-envelope footer-contacts-icon"></i>
 						<p> <a href="#" target="_blank">dichvuxetantrang@gmail.com</a></p>
