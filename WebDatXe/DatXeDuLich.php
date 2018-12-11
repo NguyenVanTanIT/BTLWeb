@@ -18,8 +18,8 @@
 	<!-- logo -->
 	<header class="rounded id=">
 		<img src="image/banner.jpg" class="rounded mx-auto d-block col-md-12 " alt="slogan" style="
-    padding-right: 0px;
-    padding-left: 0px;">
+		padding-right: 0px;
+		padding-left: 0px;">
 		
 	</header>
 	<!-- menu -->
@@ -58,141 +58,159 @@
 						
 					</ul>
 					<?php 
-						$user = isset($_GET["user"]) ? $_GET["user"] : "";
-						if (isset($_GET["user"])) {
-					?>
-					
-					<form class="form-inline">
-						<a href="" class="btn btn-outline-primary">welcome: <?php echo $user ?></a>
-						<a class="nav-link  rounded" href="DatXeDuLich.php?page=logout">Đăng Xuất</a> 
-					</form>
-					
-					<?php	
+					$user = isset($_GET["user"]) ? $_GET["user"] : "";
+					if (isset($_GET["user"])) {
+						?>
+						
+						<form class="form-inline">
+							<a href="" class="btn btn-outline-primary">welcome: <?php echo $user ?></a>
+							<a class="nav-link  rounded" href="DatXeDuLich.php?page=logout">Đăng Xuất</a> 
+						</form>
+						
+						<?php	
 					} 
 					else {	
-					?>
-					<form class="form-inline">
-						<a class="nav-link  rounded" href="DatXeDuLich.php?page=dangnhap">Đăng Nhập</a> 
-						<a class="nav-link  rounded" href="DatXeDuLich.php?page=dangky">Đăng Ký</a> 
-					</form>
+						?>
+						<form class="form-inline">
+							<a class="nav-link  rounded" href="DatXeDuLich.php?page=dangnhap">Đăng Nhập</a> 
+							<a class="nav-link  rounded" href="DatXeDuLich.php?page=dangky">Đăng Ký</a> 
+						</form>
 					<?php } ?>
 
 
 					<?php 
-						
-						$page = isset($_GET["page"]) ? $_GET["page"] : "";
-						if($page=="logout")
-							header("location: DatXeDuLich.php");
-					 ?>
+					
+					$page = isset($_GET["page"]) ? $_GET["page"] : "";
+					if($page=="logout")
+						header("location: DatXeDuLich.php");
+					?>
 				</div>
 			</div>
 			
 		</nav>
 		<!-- slide -->
-		<content >
-			<div class="row">
-				<div class="container rounded">
-					<div id="demo" class="carousel slide" data-ride="carousel">
-						<ul class="carousel-indicators">
-							<li data-target="#demo" data-slide-to="0" class="active"></li>
-							<li data-target="#demo" data-slide-to="1"></li>
-							<li data-target="#demo" data-slide-to="2"></li>
-							<li data-target="#demo" data-slide-to="3"></li>
-							<li data-target="#demo" data-slide-to="4"></li>
-						</ul>
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img src="image/anh1.jpg" alt="Los Angeles" width="1100" height="500">
-								<div class="carousel-caption">
-									<h3>Los Angeles</h3>
-									<p>We had such a great time in LA!</p>
-								</div>   
-							</div>
-							<div class="carousel-item">
-								<img src="image/anh2.jpg" alt="Chicago" width="1100" height="500">
-								<div class="carousel-caption">
-									<h3>Chicago</h3>
-									<p>Thank you, Chicago!</p>
-								</div>   
-							</div>
-							<div class="carousel-item">
-								<img src="image/anh3.jpg" alt="New York" width="1100" height="500">
-								<div class="carousel-caption">
-									<h3>New York</h3>
-									<p>We love the Big Apple!</p>
-								</div>   
-							</div>
-							<div class="carousel-item">
-								<img src="image/anh4.jpg" alt="Chicago" width="1100" height="500">
-								<div class="carousel-caption">
-									<h3>Chicago</h3>
-									<p>Thank you, Chicago!</p>
-								</div>   
-							</div>
-							<div class="carousel-item">
-								<img src="image/anh5.jpg" alt="Chicago" width="1100" height="500">
-								<div class="carousel-caption">
-									<h3>Chicago</h3>
-									<p>Thank you, Chicago!</p>
-								</div>   
-							</div>
+		<div class="col-md-12" style="padding-right: 0px;padding-left: 0px;">
+			<div class="carousel slide" id="carousel-683226">
+				<ol class="carousel-indicators">
+					<li data-slide-to="0" data-target="#carousel-683226" class="active">
+					</li>
+					<li data-slide-to="1" data-target="#carousel-683226" class="">
+					</li>
+					<li data-slide-to="2" data-target="#carousel-683226" class="">
+					</li>
+					<li data-slide-to="3" data-target="#carousel-683226" class="">
+					</li>
+					<li data-slide-to="4" data-target="#carousel-683226" class="">
+					</li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img class="d-block w-100" alt="Carousel Bootstrap First" src="image/slide_1a.jpg">
+						<div class="carousel-caption">
+							<h4>
+								First Thumbnail label
+							</h4>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
 						</div>
-						<a class="carousel-control-prev" href="#demo" data-slide="prev">
-							<span class="carousel-control-prev-icon"></span>
-						</a>
-						<a class="carousel-control-next" href="#demo" data-slide="next">
-							<span class="carousel-control-next-icon"></span>
-						</a>		
 					</div>
-				</div>		
+					<div class="carousel-item">
+						<img class="d-block w-100" alt="Carousel Bootstrap Second" src="image/slide_2a.jpg">
+						<div class="carousel-caption">
+							<h4>
+								Second Thumbnail label
+							</h4>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" alt="Carousel Bootstrap Third" src="image/slide_3a.jpg">
+						<div class="carousel-caption">
+							<h4>
+								Third Thumbnail label
+							</h4>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" alt="Carousel Bootstrap Third" src="image/slide_4a.jpg">
+						<div class="carousel-caption">
+							<h4>
+								Third Thumbnail label
+							</h4>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img class="d-block w-100" alt="Carousel Bootstrap Third" src="image/slide_5a.jpg">
+						<div class="carousel-caption">
+							<h4>
+								Third Thumbnail label
+							</h4>
+							<p>
+								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+							</p>
+						</div>
+					</div>
+				</div> <a class="carousel-control-prev" href="#carousel-683226" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-683226" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
 			</div>
-		</content>
+		</div>
 
 		<main class="rounded container">
 
 			<div class="row">
 				<div class="col-md-9" >
 					<div class="row">
-							<?php 
-				$page=isset($_GET["page"])?$_GET["page"]:"";
-				    if($page =='trangchu')
-					 	include "php/trangchu.php";
-					 if($page =='datxe')
-					 	include "php/formdatxe.php";
-					 if($page =='lienhe')
-					 	include "php/lienhe.php";
-					 if($page =='gioithieu')
-					 	include "php/gioithieu.php";
-					 if($page =='baogia')
-					 	include "php/baogia.php";
-					 if($page =='dangnhap')
-					 	include "login.html";
-					 if($page =='dangky')
-					 	include "register.html";
-				 ?>
+						<?php 
+						$page=isset($_GET["page"])?$_GET["page"]:"";
+						if($page =='trangchu')
+							include "php/trangchu.php";
+						if($page =='datxe')
+							include "php/formdatxe.php";
+						if($page =='lienhe')
+							include "php/lienhe.php";
+						if($page =='gioithieu')
+							include "php/gioithieu.php";
+						if($page =='baogia')
+							include "php/baogia.php";
+						if($page =='dangnhap')
+							include "login.html";
+						if($page =='dangky')
+							include "register.html";
+						else{
+							include('php/trangchu.php');
+						}
+						?>
 					</div>
 					
 					<?php 
-						$act = isset($_GET["act"]) ? $_GET["act"] : "";
+					$act = isset($_GET["act"]) ? $_GET["act"] : "";
 					?>
 					<?php
-						if ($act == "false"){
-			 		?>
-			 			<div class="alert alert-danger" style="text-align: center">
-			 				<?php echo "sai tài khoản hoặc mật khẩu"; ?>
-			 			</div>
-			 		<?php 
-			 		}		
-			 		?>
-			 		<?php
-						if ($act == "false-role"){
-			 		?>
-			 			<div class="alert alert-danger" style="text-align: center">
-			 				<?php echo "k dc truy cap"; ?>
-			 			</div>
-			 		<?php 
-			 		}		
-			 		?>
+					if ($act == "false"){
+						?>
+						<div class="alert alert-danger" style="text-align: center">
+							<?php echo "sai tài khoản hoặc mật khẩu"; ?>
+						</div>
+						<?php 
+					}		
+					?>
+					<?php
+					if ($act == "false-role"){
+						?>
+						<div class="alert alert-danger" style="text-align: center">
+							<?php echo "k dc truy cap"; ?>
+						</div>
+						<?php 
+					}		
+					?>
 				</div>
 				<div class="col-md-3 bg-success rounded-right">
 					<!--Tìm kiếm nhanh-->
@@ -248,7 +266,7 @@
 						<div class="title_box_support">THUÊ XE 4 ĐẾN 45 CHỖ</div>
 						<div class="b_car_type_content">    
 							<ul class="none_tag ul_carcompany" style="list-style: none; text-indent: 10px;">
-						
+								
 								<li class="car_type">
 									<a href="#">Xe du lịch 45 chỗ</a>
 								</li>
@@ -361,27 +379,27 @@
 					</div>
 				</div>
 			</footer>
- 
-			</script>
-			</footer>	
+			
+		</script>
+	</footer>	
 
-			<script src="js/jquery.min.js"></script>
-			<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
 
-			<!-- Subiz -->
-			<script>
-			(function(s, u, b, i, z){
-			  u[i]=u[i]||function(){
-			    u[i].t=+new Date();
-			    (u[i].q=u[i].q||[]).push(arguments);
-			  };
-			  z=s.createElement('script');
-			  var zz=s.getElementsByTagName('script')[0];
-			  z.async=1; z.src=b; z.id='subiz-script';
-			  zz.parentNode.insertBefore(z,zz);
-			})(document, window, 'https://widgetv4.subiz.com/static/js/app.js', 'subiz');
-			subiz('setAccount', 'acqesyywfdutbqwxxnsw');
-			</script>
-			<!-- End Subiz -->
-		</body>
-		</html>
+	<!-- Subiz -->
+	<script>
+		(function(s, u, b, i, z){
+			u[i]=u[i]||function(){
+				u[i].t=+new Date();
+				(u[i].q=u[i].q||[]).push(arguments);
+			};
+			z=s.createElement('script');
+			var zz=s.getElementsByTagName('script')[0];
+			z.async=1; z.src=b; z.id='subiz-script';
+			zz.parentNode.insertBefore(z,zz);
+		})(document, window, 'https://widgetv4.subiz.com/static/js/app.js', 'subiz');
+		subiz('setAccount', 'acqesyywfdutbqwxxnsw');
+	</script>
+	<!-- End Subiz -->
+</body>
+</html>
