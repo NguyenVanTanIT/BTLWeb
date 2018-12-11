@@ -16,15 +16,15 @@
 <body >
 	
 	<!-- logo -->
-	<header class="rounded id=">
-		<img src="image/banner.jpg" class="rounded mx-auto d-block col-md-12 " alt="slogan" style="
+	<header >
+		<img src="image/banner.jpg" class=" mx-auto d-block col-md-12 " alt="slogan" style="
 		padding-right: 0px;
 		padding-left: 0px;">
 		
 	</header>
 	<!-- menu -->
 
-	<nav class="navbar navbar-expand-lg rounded sticky-top" id="menu">
+	<nav class="navbar navbar-expand-lg  sticky-top" id="menu">
 		<div class="container">
 			<a class="nav-link text-white" href="DatXeDuLich.php?page=trangchu"><i class="fa fa-lg fa-home"></i></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -89,8 +89,8 @@
 			
 		</nav>
 		<!-- slide -->
-		<div class="col-md-12" style="padding-right: 0px;padding-left: 0px;">
-			<div class="carousel slide" id="carousel-683226">
+		<div class="col-md-12 slide" style="padding-right: 0px;padding-left: 0px;">
+			<div class="carousel  " id="carousel-683226">
 				<ol class="carousel-indicators">
 					<li data-slide-to="0" data-target="#carousel-683226" class="active">
 					</li>
@@ -170,6 +170,8 @@
 					<div class="row">
 						<?php 
 						$page=isset($_GET["page"])?$_GET["page"]:"";
+						if($page =='')
+							include('php/trangchu.php');
 						if($page =='trangchu')
 							include "php/trangchu.php";
 						if($page =='datxe')
@@ -184,9 +186,9 @@
 							include "login.html";
 						if($page =='dangky')
 							include "register.html";
-						else{
-							include('php/trangchu.php');
-						}
+						if($page =='chitietxe')
+							include('php/chitietxe.php');
+						
 						?>
 					</div>
 					
