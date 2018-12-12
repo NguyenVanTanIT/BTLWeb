@@ -17,6 +17,10 @@
 	<![endif]-->
 </head>
 <body>
+	<?php 
+		if(!isset($_GET["user"]))
+			header("location: login.php");
+	 ?>
 	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 		<div class="container-fluid">
 			<div class="navbar-header">

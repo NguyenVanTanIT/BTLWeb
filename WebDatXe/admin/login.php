@@ -18,21 +18,30 @@
 			<div class="login-panel panel panel-default">
 				<div class="panel-heading">Log in</div>
 				<div class="panel-body">
-					<form role="form">
+					<form role="form" method="post" action="log-in.php">
 						<fieldset>
 							<div class="form-group">
-								<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="">
+								<input class="form-control" placeholder="username" name="username" type="text" autofocus="">
 							</div>
 							<div class="form-group">
 								<input class="form-control" placeholder="Password" name="password" type="password" value="">
 							</div>
-							<div class="checkbox">
-								<label>
-									<input name="remember" type="checkbox" value="Remember Me">Remember Me
-								</label>
-							</div>
-							<a href="index.html" class="btn btn-primary">Login</a></fieldset>
+							<?php 
+								$err = isset($_GET['err']) ? $_GET['err'] : "";
+								if ($err == 'false2'){
+							?>
+							 	<div class="alert alert-danger">Không được truy cập</div>
+							<?php
+								}
+								if ($err == 'false1') {
+							?>
+								<div class="alert alert-danger">Sai usernme hoặc password</div>
+							<?php 
+								}
+							 ?>
+							<input type="submit" value="login" class="btn btn-primary">
 					</form>
+					
 				</div>
 			</div>
 		</div><!-- /.col-->

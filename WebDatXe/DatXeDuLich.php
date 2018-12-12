@@ -14,7 +14,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
 </head>
 <body >
-	
+	<?php 
+	session_start();
+	?>
 	<!-- logo -->
 	<header >
 		<img src="image/banner.jpg" class=" mx-auto d-block col-md-12 " alt="slogan" style="
@@ -58,31 +60,27 @@
 						
 					</ul>
 					<?php 
-					$user = isset($_GET["user"]) ? $_GET["user"] : "";
-					if (isset($_GET["user"])) {
-						?>
-						
-						<form class="form-inline ">
-							<a href="" class="btn btn-outline-primary">welcome: <?php echo $user ?></a>
+						if(isset($_SESSION["user"]))
+						{
+					?>
+						<form class="form-inline  ">
+							<a class="nav-link  rounded text-white" href="DatXeDuLich.php?page=dangnhap">Chào mừng bạn: <?php echo $_SESSION["user"] ?></a> 
 							<a class="nav-link  rounded text-white" href="DatXeDuLich.php?page=logout">Đăng Xuất</a> 
 						</form>
-						
-						<?php	
-					} 
-					else {	
-						?>
+					<?php }else { ?>
 						<form class="form-inline  ">
 							<a class="nav-link  rounded text-white" href="DatXeDuLich.php?page=dangnhap">Đăng Nhập</a> 
-							<a class="nav-link  rounded text-white" href="DatXeDuLich.php?page=dangky">Đăng Ký</a> 
+							<a class="nav-link  rounded text-white" href="DatXeDuLich.php?page=dangky" >Đăng Ký</a> 
 						</form>
 					<?php } ?>
-
-
 					<?php 
-					
-					$page = isset($_GET["page"]) ? $_GET["page"] : "";
-					if($page=="logout")
-						header("location: DatXeDuLich.php");
+					$page = isset($_GET["page"])?$_GET["page"]:"" ;
+						if ($page=='logout')
+						{
+							unset($_SESSION["user"]);
+							header("location:DatXeDuLich.php ");
+						}
+						//xóa
 					?>
 				</div>
 			</div>
@@ -157,24 +155,13 @@
 					</div>
 					
 					<?php 
-					$act = isset($_GET["act"]) ? $_GET["act"] : "";
+					$err = isset($_GET["err"]) ? $_GET["err"] : "";
+					if ($err == "false"){
 					?>
-					<?php
-					if ($act == "false"){
-						?>
 						<div class="alert alert-danger" style="text-align: center">
-							<?php echo "sai tài khoản hoặc mật khẩu"; ?>
+							<?php echo "Vui lòng nhập lại tài khoản"; ?>
 						</div>
-						<?php 
-					}		
-					?>
-					<?php
-					if ($act == "false-role"){
-						?>
-						<div class="alert alert-danger" style="text-align: center">
-							<?php echo "k dc truy cap"; ?>
-						</div>
-						<?php 
+					<?php 
 					}		
 					?>
 				</div>
