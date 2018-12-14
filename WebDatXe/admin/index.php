@@ -11,13 +11,10 @@
 	
 	<!--Custom Font-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-	<!--[if lt IE 9]>
-	<script src="js/html5shiv.js"></script>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+	
 </head>
 <body>
-	<?php 
+		<?php 
 		if(!isset($_GET["user"]))
 			header("location: login.php");
 	 ?>
@@ -107,7 +104,7 @@
 		
 		<!-- menu -->
 		<ul class="nav menu">
-			<li class="active"><a href="index.html"><em class="fa fa-dashboard">&nbsp;</em>Trang chủ</a></li>
+			<li class="active"><a href="index.php?page=themxe"><em class="fa fa-dashboard">&nbsp;</em>Trang chủ</a></li>
 			<li><a href="index.php?page=xe"><em class="fa fa-calendar">&nbsp;</em>Xe </a></li>
 			<li><a href="index.php?page=khachhang"><em class="fa fa-bar-chart">&nbsp;</em>Khách hàng </a></li>
 			<li><a href="index.php?page=donhang"><em class="fa fa-toggle-off">&nbsp;</em>Đơn Hàng</a></li>
@@ -141,20 +138,20 @@
 			</ol>
 		</div><!--/.row-->
 		<div class="row ">
-			<div style="padding-left: 30px; padding-top: 30px;">
+			<div style="padding-left: 30px; padding-top: 30px; padding-right: 20px;">
 				<?php 
 						$page=isset($_GET["page"])?$_GET["page"]:"";
 						if($page =='')
 							include('xe/xe.php');
 						if($page =='xe')
 							include "xe/xe.php";
+						if($page =='themxe')
+							include "xe/themxe.php";
 						if($page =='khachhang')
 							include "khachhang.php";
 						if($page =='donhang')
 							include "donhang.php";
 						if($page =='admin')
-						
-						
 						?>
 			</div>
 			
@@ -163,11 +160,7 @@
 	
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/chart.min.js"></script>
-	<script src="js/chart-data.js"></script>
-	<script src="js/easypiechart.js"></script>
-	<script src="js/easypiechart-data.js"></script>
-	<script src="js/bootstrap-datepicker.js"></script>
+
 	<script src="js/custom.js"></script>
 	<script>
 		window.onload = function () {

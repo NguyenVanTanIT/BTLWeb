@@ -9,9 +9,6 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="fonts/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
 </head>
 <body >
 	<?php 
@@ -59,62 +56,74 @@
 						</li>
 						
 					</ul>
-					<?php 
-						if(isset($_SESSION["user"]))
-						{
-					?>
+					<?php
+					if (isset($_SESSION["user"]))
+					{
+						?>
 						<form class="form-inline  ">
 							<a class="nav-link  rounded text-white" href="DatXeDuLich.php?page=dangnhap">Chào mừng bạn: <?php echo $_SESSION["user"] ?></a> 
+
 							<a class="nav-link  rounded text-white" href="DatXeDuLich.php?page=logout">Đăng Xuất</a> 
 						</form>
+						
 					<?php }else { ?>
 						<form class="form-inline  ">
 							<a class="nav-link  rounded text-white" href="DatXeDuLich.php?page=dangnhap">Đăng Nhập</a> 
-							<a class="nav-link  rounded text-white" href="DatXeDuLich.php?page=dangky" >Đăng Ký</a> 
+							<a class="nav-link  rounded text-white" href="DatXeDuLich.php?page=dangky">Đăng Ký</a> 
 						</form>
 					<?php } ?>
 					<?php 
 					$page = isset($_GET["page"])?$_GET["page"]:"" ;
-						if ($page=='logout')
-						{
-							unset($_SESSION["user"]);
-							header("location:DatXeDuLich.php ");
-						}
+					if ($page=='logout')
+					{
+						unset($_SESSION["user"]);
+						header("location:DatXeDuLich.php ");
+					}
 						//xóa
+					
 					?>
 				</div>
 			</div>
 			
 		</nav>
 		<!-- slide -->
-		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active active">
-      <img class="d-block w-100" src="image/slide_5a.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="image/slide_4a.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="image/slide_3a.jpg" alt="Third slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="image/slide_2a.jpg" alt="Third slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="image/slide_1a.jpg" alt="Third slide">
-    </div>
-	  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-     <li data-target="#demo" data-slide-to="3"></li>
-      <li data-target="#demo" data-slide-to="4"></li>
-  </ul>
-  </a>
-  </div>
-</div>
-
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12" style="padding-right: 0px; padding-left: 0px;">
+					<div class="carousel slide" id="carousel-404056">
+						<ol class="carousel-indicators">
+							<li data-slide-to="0" data-target="#carousel-404056" class="active">
+							</li>
+							<li data-slide-to="1" data-target="#carousel-404056">
+							</li>
+							<li data-slide-to="2" data-target="#carousel-404056">
+							</li>
+							<li data-slide-to="3" data-target="#carousel-404056">
+							</li>
+							<li data-slide-to="4" data-target="#carousel-404056">
+							</li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100" alt="Carousel Bootstrap First" src="image/slide_2a.jpg" />
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" alt="Carousel Bootstrap Second" src="image/slide_1a.jpg" />
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" alt="Carousel Bootstrap Third" src="image/slide_3a.jpg" />
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" alt="Carousel Bootstrap Third" src="image/slide_4a.jpg" />
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" alt="Carousel Bootstrap Third" src="image/slide_5a.jpg" />
+							</div>
+						</div> <a class="carousel-control-prev" href="#carousel-404056" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-404056" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
 		<main class="rounded container">
 
 			<div class="row">
@@ -127,7 +136,7 @@
 						if($page =='trangchu')
 							include "php/trangchu.php";
 						if($page =='datxe')
-							include "php/formdatxe.php";
+							include "php/datxe.php";
 						if($page =='lienhe')
 							include "php/lienhe.php";
 						if($page =='gioithieu')
@@ -157,13 +166,12 @@
 					<?php 
 					$err = isset($_GET["err"]) ? $_GET["err"] : "";
 					if ($err == "false"){
-					?>
+						?>
+
 						<div class="alert alert-danger" style="text-align: center">
 							<?php echo "Vui lòng nhập lại tài khoản"; ?>
 						</div>
-					<?php 
-					}		
-					?>
+					<?php }	?>
 				</div>
 				<div class="col-md-3 bg-success rounded-right">
 					<!--Tìm kiếm nhanh-->
@@ -205,9 +213,9 @@
 										</select>
 										<div class="clear_left"><span></span></div>
 
-
 										<button type="submit" class="input_b_search btn btn-lint col-md-6 offset-md-3" style="margin-top: 20px;">Tìm xe</button> 
 									</div>
+
 								</form>
 							</div>
 						</div>
@@ -239,65 +247,36 @@
 						</div>
 						<div class="clear_left"></div>
 					</div>
-					<div class="dangkyform">
-						<h3 class="formheading">ĐĂNG KÝ ĐẶT XE</h3>
-						<form>
-							<div class="form-row">
-								<div class="form-group col-md-6">
-									<label for="inputhoten4">Họ Tên</label>
-									<input type="hoten" class="form-control" id="inputhoten4" placeholder="Họ Tên">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="inputsodienthoai">Số Điện Thoại</label>
-									<input type="sodienthoai" class="form-control" id="inputsodienthoai" placeholder="Số Điện Thoại">
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="form-group col-md-6">
-									<label for="inputemail4">Email</label>
-									<input type="email" class="form-control" id="inputemail4" placeholder="Email">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="inputchonxe">Chọn Xe</label>
-									<select id="inputchonxe" class="form-control">
-										<option selected>Xe 4 Chỗ</option>
-										<option>Xe 8 chỗ</option>
-										<option>Xe 16 chỗ</option>
-										<option>Xe 35 chỗ</option>
-										<option>Xe 45 chỗ</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="form-group col-md-6">
-									<label for="inputdiemxuatphat4">Điểm Xuất Phát</label>
-									<input type="diemxuatphat" class="form-control" id="inputdiemxuatphat4" placeholder="Điểm Xuất Phát">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="inputdiemden">Điểm Đến</label>
-									<input type="diemden" class="form-control" id="inputdiemden" placeholder="Điểm Đến">
-								</div>
-							</div>
-
-							<div class="form-row">
-								<div class="form-group col-md-6">
-									<label for="inputngaymuon">Ngày Thuê Xe</label>
-									<input type="date" class="form-control" id="inputngaymuon" placeholder="Ngày Thuê Xe">
-								</div>
-								<div class="form-group col-md-6">
-									<label for="inputngaytra">Ngày Trả Xe</label>
-									<input type="date" class="form-control" id="inputngaytra" placeholder="Ngày Trả Xe">
-								</div>
-							</div>
-							<button type="submit" class="btn btn-primary mb-2 " style="margin-left: 100px;
-							" border-left-width:="" 0px;="" margin-left:="" 100px;="" "="">Đăng Ký</button>
-						</form>
-					</div>	
+					
+					<!-- hổ trợ -->
+					<div class=" border border-danger rounded bg-light" style="margin-top: 25px;margin-bottom: 25px; padding-top: 5px; padding-bottom: 5px;">
+						<div class="box_search_2_all">
+							<div class="title_box_support">HỖ TRỢ TRỰC TUYẾN</div>
+							
+							<table width="100%" cellpadding="3">
+								<tbody >
+									<tr >
+										<td colspan="2" class="td_title_support"  style=" padding-left: 20px;">Thuê xe du lịch - 01</td>
+									</tr>
+									
+									<tr>
+										<td class="td_phone" colspan="2"  style=" padding-left: 20px;">Hotline - 0963 651 555</td>
+									</tr>
+									<tr>
+										<td colspan="2" class="td_title_support"  style=" padding-left: 20px;">Thuê xe du lịch - 02</td>
+									</tr>
+									
+									<tr>
+										<td class="td_phone" colspan="2"  style=" padding-left: 20px;">Hotline - 039 8712 777</td>
+									</tr>
+								</tbody>
+							</table>	<div class="clear_left"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</main>
 		<!-- footer -->
-
 		<footer class="container rounded">
 			<div class="row">
 				<div class="col-sm-6 col-md-4 footer-navigation">
@@ -338,7 +317,6 @@
 
 	<script src="js/jquery.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
-
 	<!-- Subiz -->
 	<script>
 		(function(s, u, b, i, z){
@@ -353,6 +331,9 @@
 		})(document, window, 'https://widgetv4.subiz.com/static/js/app.js', 'subiz');
 		subiz('setAccount', 'acqesyywfdutbqwxxnsw');
 	</script>
-	<!-- End Subiz -->
+
+
+
+	
 </body>
 </html>

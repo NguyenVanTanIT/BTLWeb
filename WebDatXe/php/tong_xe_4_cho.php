@@ -33,7 +33,7 @@ include('include/ketnoi.php');
 					<h6><?php echo $row['mo_ta_xe']; ?></h6>
 
 					<h5>Liên Hệ: 016868686868</h5>
-					<a class="datxe bg-danger" href="#"><h5>Đặt Xe</h5></a>
+					<a class="datxe bg-danger" href="DatXeDuLich.php?page=datxe"><h5>Đặt Xe</h5></a>
 			</h2>
 		</div>
 

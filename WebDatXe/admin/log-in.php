@@ -10,7 +10,7 @@
 		$level = mysqli_query($conn,"select level from users where username = $username and level = 2");
 		if (mysqli_num_rows($level) == 1)
 		{	
-			header("location: admin.php?user=".$username);
+			header("location: index.php?user=".$username);
 		}
 		else
 		{
