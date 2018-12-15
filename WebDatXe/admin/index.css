@@ -1,0 +1,21 @@
+.title {
+	background: #585858;
+	color: white;
+}
+
+.menu{
+	background: #E6E6E6;
+}
+.car{
+padding-top: 10px;
+}
+.customer{
+	padding-top: 10px;
+}
+.bill{
+	padding-top: 10px;
+}
+.admin{
+	margin-top: 10px;
+	padding-bottom: 10px;
+}

@@ -138,7 +138,7 @@
 						
 						<?php
 						if($page =='')
-						include('php/trangchu.php');
+							include('php/trangchu.php');
 						if($page =='trangchu')
 							include "php/trangchu.php";
 						if($page =='datxe')
@@ -150,11 +150,10 @@
 						if($page =='baogia')
 							include "php/baogia.php";
 						if($page =='dangnhap')
-							{include "login.html";
-						include('php/trangchu.php');}
+							include "login.html";
 						if($page =='dangky')
-							{include "register.html";
-						include('php/trangchu.php');}
+							include "register.html";
+						
 
 						if($page =='chitietxe')
 							include('php/chitietxe.php');
