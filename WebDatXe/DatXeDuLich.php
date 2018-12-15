@@ -9,6 +9,9 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="fonts/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+<!-- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css"> -->
 </head>
 <body >
 	<?php 
@@ -123,6 +126,9 @@
 					</div>
 				</div>
 			</div>
+
+
+
 		</div>
 		<main class="rounded container">
 
@@ -130,11 +136,13 @@
 				<div class="col-md-9" style="padding-top: 30px;" >
 					<div class="row">
 						
-							include('php/trangchu.php');
+						<?php
+						if($page =='')
+						include('php/trangchu.php');
 						if($page =='trangchu')
 							include "php/trangchu.php";
 						if($page =='datxe')
-							include "php/datxe.php";
+							include "php/datxe.html";
 						if($page =='lienhe')
 							include "php/lienhe.php";
 						if($page =='gioithieu')
@@ -142,9 +150,12 @@
 						if($page =='baogia')
 							include "php/baogia.php";
 						if($page =='dangnhap')
-							include "login.html";
+							{include "login.html";
+						include('php/trangchu.php');}
 						if($page =='dangky')
-							include "register.html";
+							{include "register.html";
+						include('php/trangchu.php');}
+
 						if($page =='chitietxe')
 							include('php/chitietxe.php');
 						if($page =='tongxe4cho')
@@ -230,13 +241,13 @@
 									<a href="DatXeDuLich.php?page=tongxe4cho">Xe du lịch 4 chỗ</a>
 								</li>
 								<li class="car_type">
-									<a href="DatXeDuLich.php?page=tongxe8cho">Xe du lịch 35 chỗ</a>
+									<a href="DatXeDuLich.php?page=tongxe8cho">Xe du lịch 8 chỗ</a>
 								</li>
 								<li class="car_type">
 									<a href="DatXeDuLich.php?page=tongxe16cho">Xe du lịch 16 chỗ</a>
 								</li>
 								<li class="car_type">
-									<a href="DatXeDuLich.php?page=tongxe35cho">Xe du lịch 8 chỗ</a>
+									<a href="DatXeDuLich.php?page=tongxe35cho">Xe du lịch 35 chỗ</a>
 								</li>
 								<li class="car_type">
 									<a href="DatXeDuLich.php?page=tongxe45cho">Thuê xe 45 chỗ</a>

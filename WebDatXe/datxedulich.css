@@ -249,3 +249,18 @@ div.social-links {
     border-bottom-right-radius: 0px;
     padding: 0px;
 }
+
+
+.slider {
+  background: red;
+  color: white;
+  width: auto;
+  height: auto;
+  display: flex;
+  overflow-x: auto;
+}
+.slide {
+  width: auto;
+  flex-shrink: 0;
+  height: 100%;
+}

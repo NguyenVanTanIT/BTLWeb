@@ -8,16 +8,16 @@
 <?php
 include('include/ketnoi.php'); 
 
-	$strSQL="SELECT * FROM thongtinxe WHERE so_cho =4";
-	$thongtinxe=mysqli_query($ung,$strSQL);
+	$strSQL="SELECT * FROM car WHERE seats =4";
+	$car=mysqli_query($ung,$strSQL);
 ?>
 <?php $i=0; ?>
-		<?php while($row=mysqli_fetch_array($thongtinxe)) {$i+=1; ?>
+		<?php while($row=mysqli_fetch_array($car)) {$i+=1; ?>
 	<div class="row " style="padding-top: 20px;">
 		
 		<div class="col-md-4 ">
 			<a href="DatXeDuLich.php?page=chitietxe" title="Xe 4 chỗ Mazda CX5">
-				<img src="image/<?php echo $row['hinhanh'] ?>" width="250px" height="150px" 
+				<img src="image/<?php echo $row['image'] ?>" width="250px" height="150px" 
 						style="border:#999999 1px solid;" align="left" />
 			</a>
 			
@@ -26,11 +26,11 @@ include('include/ketnoi.php');
 			<h2 class="tensanpham_tencot">
 				<a href="Xe-4-chỗ-Madza-CX5.html" title="Xe 4 chỗ Mazda CX5">
 					<h3>
-						<?php echo $row['ten_xe']; ?>
+						<?php echo $row['carname']; ?>
 						
 					</h3>
 				</a>
-					<h6><?php echo $row['mo_ta_xe']; ?></h6>
+					<h6><?php echo $row['describe']; ?></h6>
 
 					<h5>Liên Hệ: 016868686868</h5>
 					<a class="datxe bg-danger" href="DatXeDuLich.php?page=datxe"><h5>Đặt Xe</h5></a>
