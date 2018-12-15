@@ -52,7 +52,7 @@
 							<a class="nav-link  rounded" href="DatXeDuLich.php?page=baogia">Báo Giá</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link  rounded" href="DatXeDuLich.php?page=trangchu">Thông Tin</a>
+							<a class="nav-link  rounded" href="DatXeDuLich.php?page=trangchu">Thông Tin Xe</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link  rounded" href="DatXeDuLich.php?page=lienhe">Liên Hệ</a>
@@ -150,10 +150,13 @@
 						if($page =='baogia')
 							include "php/baogia.php";
 						if($page =='dangnhap')
-							include "login.html";
+						{include "login.html";
+						include "php/trangchu.php";
+						}
 						if($page =='dangky')
-							include "register.html";
-						
+						{	include "register.html";
+						include "php/trangchu.php";
+						}
 
 						if($page =='chitietxe')
 							include('php/chitietxe.php');
