@@ -129,9 +129,7 @@
 			<div class="row">
 				<div class="col-md-9" style="padding-top: 30px;" >
 					<div class="row">
-						<?php 
-						$page=isset($_GET["page"])?$_GET["page"]:"";
-						if($page =='')
+						
 							include('php/trangchu.php');
 						if($page =='trangchu')
 							include "php/trangchu.php";
