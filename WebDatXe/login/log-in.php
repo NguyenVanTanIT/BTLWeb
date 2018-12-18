@@ -23,4 +23,7 @@
 		}
 		
  ?>
-
+	<?php 
+		if(!isset($_GET["user"]))
+			header("location: login.php");
+	 ?>

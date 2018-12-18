@@ -1,0 +1,30 @@
+
+  #menu{
+    padding: 0px;
+    background: red;
+    width: 100%; 
+  }
+
+  nav ul li a{
+   font-size: 20px;
+   display: block;
+   color: #fff;
+   width: auto;
+   border-radius: 2px; 
+  border-left: : 1px solid #f6f6f6;
+
+ }
+
+
+ nav a:hover{
+  background-color: #c30404;
+  color:  #fff ;
+
+}
+
+
+nav ul li a:hover{
+  background-color: #c30404;
+  color: #fff ;
+
+}
