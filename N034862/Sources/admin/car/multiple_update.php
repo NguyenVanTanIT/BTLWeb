@@ -24,9 +24,9 @@ if(isset($_POST['hidden_id']))
    ':id_car'   => $id_car[$count]
   );
   $query = "
-  UPDATE car 
+  UPDATE `car` 
   SET carname = :carname, describe = :describe, image = :image, seats = :seats, licenseplate = :licenseplate , license = :license
-  WHERE id_car = :id_car
+  WHERE `id_car` = :id_car
   ";
   $statement = $connect->prepare($query);
   $statement->execute($data);

@@ -1,7 +1,7 @@
 
 <html>  
     <head>  
-        <title>Update Multiple Mysql Data using Checkbox with Ajax in PHP</title>
+        <title>update car</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
@@ -42,7 +42,7 @@ $(document).ready(function(){
     function fetch_data()
     {
         $.ajax({
-            url:"select.php",
+            url:"car/select.php",
             method:"POST",
             dataType:"json",
             success:function(data)
