@@ -12,7 +12,7 @@
   
  <script src="js/jquery.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 </head>
 <body >
@@ -68,8 +68,16 @@
                 <a class="dropdown-item" href="DatXeDuLich.php?page=tongxe8cho"> Sửa Khách Hàng</a> 
                 <a class="dropdown-item" href="DatXeDuLich.php?page=insertcar">Xóa Khách Hàng</a>  
               </div>
+            </li >
+            <li class="nav-item">
+               <a class="nav-link rounded" href="DatXeDuLich.php?page=gioithieu">Giới Thiệu </a>
+
+            </li>
+
+
             </li>
           </ul>
+
         </div>
       </div>
       

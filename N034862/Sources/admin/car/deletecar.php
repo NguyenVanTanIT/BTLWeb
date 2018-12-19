@@ -1,14 +1,10 @@
 <?php
 
 //index.php
-
-$connect = new PDO("mysql:host=localhost;dbname=datxedulich", "root", "");
+include('connect.php');
+$output = '';
 $query = "SELECT * FROM car ORDER BY id_car DESC";
-$statement = $connect->prepare($query);
-
-$statement->execute();
-
-$result = $statement->fetchAll();
+$result = mysqli_query($connect, $query);
 
 ?>  
     <body>  
@@ -16,6 +12,19 @@ $result = $statement->fetchAll();
             <br />
    <div class="table-responsive">  
     <h3 align="center">Delete Xe</h3><br />
+    <div class="row   container col-md-12" style="margin-bottom: 20px;">
+        <div class="col-md -11">
+            
+        </div>
+         <div class="col-md -2">
+            <input type="text" class="search form-control" name="">
+        </div>
+         <div class="col-md-1">
+             <th width="5%"><button type="button" id="search_btn" class="btn btn-danger btn-xs" style="ma">Search</button></th>
+         </div>
+        
+        
+    </div>
     <div class="table-responsive">
                     <table class="table table-bordered">
                         <thead>
@@ -34,7 +43,7 @@ $result = $statement->fetchAll();
                         {
                             echo '
                             <tr>
-                                <td>
+                                <td class="danhsach">
                                     <input type="checkbox" class="delete_checkbox" value="'.$row["id_car"].'" />
                                 </td>
                                 <td>'.$row["carname"].'</td>
@@ -71,35 +80,44 @@ $(document).ready(function(){
         {
             $(this).closest('tr').removeClass('removeRow');
         }
+
     });
 
     $('#delete_all').click(function(){
-        var checkbox = $('.delete_checkbox:checked');
-        if(checkbox.length > 0)
-        {
-            var checkbox_value = [];
-            $(checkbox).each(function(){
-                checkbox_value.push($(this).val());
-            });
+       
 
-            $.ajax({
-                url:"delete.php",
-                method:"POST",
-                data:{checkbox_value:checkbox_value},
-                success:function()
-                {
-                    $('.removeRow').fadeOut(1500);
+       
+             var checkbox = $('.delete_checkbox:checked');
+            if(checkbox.length > 0)
+            { 
+                if (confirm('Bạn có muốn xóa không')) {
+                    var checkbox_value = [];
+                    $(checkbox).each(function(){
+                        checkbox_value.push($(this).val());
+                    });
+
+                    $.ajax({
+                        url:"car/delete.php",
+                        method:"POST",
+                        data:{checkbox_value:checkbox_value},
+                        success:function()
+                        {
+                            $('.removeRow').fadeOut(1500);
+                        }
+                    }); 
                 }
-            });
-        }
-        else
-        {
-            alert("Select atleast one records");
-        }
+                 else{
+                        return false;
+                }
+            }
+            else
+            {
+                alert("Bạn chưa chọn dữ liệu cần xóa");
+            }
     });
 
 });  
-</script>
 
+</script>
 
 
