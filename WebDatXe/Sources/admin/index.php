@@ -9,9 +9,11 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="fonts/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
-  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
-<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css"> -->
+  
+ <script src="js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 </head>
 <body >
   <?php 
@@ -91,7 +93,6 @@
           ?>
           
     </div>
-   <script src="js/jquery.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+
   </body>
 </html>

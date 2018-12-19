@@ -19,11 +19,11 @@ function foo() {
       license: license
     },
     success: function(result){
-      if(result==1){
-        alert("111");
+      if(result ==1){
+         alert('Thêm Thành công');
       }
       else{
-        alert('00');
+        alert('Thêm thất bại');
       }
     },    
   });

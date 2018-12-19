@@ -3,7 +3,6 @@
 //index.php
 
 $connect = new PDO("mysql:host=localhost;dbname=datxedulich", "root", "");
-
 $query = "SELECT * FROM car ORDER BY id_car DESC";
 $statement = $connect->prepare($query);
 
@@ -16,17 +15,18 @@ $result = $statement->fetchAll();
         <div class="container">  
             <br />
    <div class="table-responsive">  
-    <h3 align="center">Delete Multiple Records using PHP Ajax with Animated Effect</h3><br />
+    <h3 align="center">Delete Xe</h3><br />
     <div class="table-responsive">
                     <table class="table table-bordered">
                         <thead>
                         <tr>
                             <th width="5%"><button type="button" name="delete_all" id="delete_all" class="btn btn-danger btn-xs">Delete</button></th>
-                            <th width="20%">Name</th>
-                            <th width="38%">Address</th>
-                            <th width="7%">Gender</th>
-                            <th width="25%">Designation</th>
-                            <th width="5%">Age</th>
+                              <th width="10%">carname</th>
+                              <th width="55%">describe</th>
+                              <th width="20%">image</th>
+                              <th width="10%">seats</th>
+                              <th width="2%">licenseplate</th>
+                              <th width="3%">license</th>
                         </tr>
                         </thead>
                         <?php
@@ -40,6 +40,7 @@ $result = $statement->fetchAll();
                                 <td>'.$row["carname"].'</td>
                                 <td>'.$row["describe"].'</td>
                                 <td>'.$row["image"].'</td>
+                                <td>'.$row["seats"].'</td>
                                 <td>'.$row["licenseplate"].'</td>
                                 <td>'.$row["license"].'</td>
                             </tr>
@@ -82,7 +83,7 @@ $(document).ready(function(){
             });
 
             $.ajax({
-                 url:"delete.php",
+                url:"delete.php",
                 method:"POST",
                 data:{checkbox_value:checkbox_value},
                 success:function()
