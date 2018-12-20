@@ -27,7 +27,6 @@
     
   </header>
   <!-- menu -->
-
   <nav class="navbar navbar-expand-lg  sticky-top" id="menu">
     <div class="container">
       <a class="nav-link text-white" href="DatXeDuLich.php?page=trangchu"><i class="fa fa-lg fa-home"></i></a>
@@ -70,17 +69,14 @@
               </div>
             </li >
             <li class="nav-item">
-               <a class="nav-link rounded" href="DatXeDuLich.php?page=gioithieu">Giới Thiệu </a>
-
+               <a class="nav-link rounded" href="DatXeDuLich.php?page=gioithieu">Đăng nhập</a>
             </li>
-
-
+            <li class="nav-item">
+               <a class="nav-link rounded" href="DatXeDuLich.php?page=gioithieu">Đăng xuất</a>
             </li>
           </ul>
-
         </div>
       </div>
-      
     </nav>
         <div class="row">
           <div class="col-md-12">
@@ -99,8 +95,6 @@
               include "donhang.php";
             if($page =='admin')
           ?>
-          
     </div>
-
   </body>
 </html>
