@@ -7,7 +7,7 @@ $user = "root";
 $pass = "";
 $db = "datxedulich";
 $con = mysqli_connect($host,$user,$pass,$db);
-
+mysqli_set_charset($con,'UTF8');
 
 
 $username = isset($_POST["username"])?$_POST["username"]:"";
@@ -20,13 +20,8 @@ $cmnd = isset($_POST["cmnd"])?$_POST["cmnd"]:"";
 $sex = isset($_POST["sex"])?$_POST["sex"]:"";
 $license = isset($_POST["license"])?$_POST["license"]:"";
 
-
-
-mysql_set_charset('utf8', $con);
-
-
         // Mã khóa mật khẩu
-$password = md5($password);
+ $password = md5($password);
 
     //Kiểm tra tên đăng nhập này đã có người dùng chưa
 if (mysqli_num_rows(mysqli_query($con, "SELECT username FROM users WHERE username='$username'")) > 0){
@@ -45,6 +40,6 @@ if (mysqli_num_rows(mysqli_query($con, "SELECT email FROM users WHERE email='$em
     //Lưu thông tin thành viên vào bảng
 
 	$sql = mysqli_query($con,"insert into `users`(`username`,`password`,`email`,`phone`,`level`, `address`, `cmnd`, `sex`, `license`) values('$username','$password','$email','$phone','1' , '$address', '$cmnd' , '$sex' , '$license' )");
-	header("location:DatXeDuLich.php?page=dangnhap");
+	header("location:DatXeDuLich.php?page=DatXeDuLich");
 ?> 
 

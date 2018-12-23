@@ -33,7 +33,7 @@
 				<span class="fa fa-lg fa-bars text-white" ></span></button> 			
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-					<ul class="nav nav-pills mr-auto fixed">
+					<ul class="nav nav-pills mr-auto fixed col-md-8">
 						<li class="nav-item">
 							<a class="nav-link rounded" href="DatXeDuLich.php?page=gioithieu">Giới Thiệu </a>
 
@@ -63,18 +63,72 @@
 					if (isset($_SESSION["user"]))
 					{
 						?>
-						<form class="form-inline  ">
-							<a class="nav-link  rounded text-white" href="DatXeDuLich.php?page=dangnhap">Chào mừng bạn: <?php echo $_SESSION["user"] ?></a> 
-
-							<a class="nav-link  rounded text-white" href="DatXeDuLich.php?page=logout">Đăng Xuất</a> 
-						</form>
+						<div class="row" style="width: 450px">
+							<a class="nav-link  rounded text-white col-xl-6" href="DatXeDuLich.php">Chào mừng bạn: <?php echo $_SESSION["user"] ?></a> 
+							<a class="nav-link  rounded text-white col-xl-6" href="DatXeDuLich.php?page=logout">Đăng Xuất</a> 
+						</div>
 						
-					<?php }else { ?>
-						<form class="form-inline  ">
-							<a class="nav-link  rounded text-white" href="DatXeDuLich.php?page=dangnhap">Đăng Nhập</a> 
-							<a class="nav-link  rounded text-white" href="DatXeDuLich.php?page=dangky">Đăng Ký</a> 
-						</form>
-					<?php } ?>
+					<?php }
+					else { ?>
+						<div class="row col-md-6">
+						<div class="com-md-6">
+						<div class="container">
+							<!-- Trigger the modal with a button -->
+							<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Đăng Nhập</button>
+
+							<!-- Modal -->
+							<div class="modal fade" tabindex="-1" id="myModal" role="dialog">
+								<div class="modal-dialog">
+
+									<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+										<div class="modal-body">
+											
+												<div class="container-fluid">
+													<form action="login.php" method="post">
+													<div class="row">
+														<div class="col-md-12">
+															
+															<div class="row">
+																<div class="col-md-6">Username
+																</div>
+																<div class="col-md-6">
+																	<input type="text" name="username" required="">
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-md-6">Password
+																</div>
+																<div class="col-md-6"><input type="password" name="password" required="">
+																</div>
+															</div>
+														</div>
+														<div class="modal-footer">
+															<input type="submit" value="Đăng Nhập">
+														</div>
+													</div>
+													</form>
+												</div>
+											
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+						
+
+						<div class="col-md-6">
+						<!-- <a class="nav-link  rounded text-white" href="DatXeDuLich.php?page=dangky"></a>  -->
+						<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><a href="DatXeDuLich.php?page=dangky">Đăng Ký</a></button>
+
+						</div>
+					</div>
+				<?php } ?>
 					<?php 
 					$page = isset($_GET["page"])?$_GET["page"]:"" ;
 					if ($page=='logout')
@@ -86,6 +140,7 @@
 					
 					?>
 				</div>
+
 			</div>
 			
 		</nav>
@@ -149,14 +204,14 @@
 							include "php/gioithieu.php";
 						if($page =='baogia')
 							include "php/baogia.php";
-						if($page =='dangnhap')
-						{include "login.html";
-						include "php/trangchu.php";
-						}
+						if($page =='DatXeDuLich')
+						include  "php/trangchu.php";
+	
+						
 						if($page =='dangky')
-						{	include "register.html";
-						include "php/trangchu.php";
-						}
+						include "register.html";
+						
+						
 
 						if($page =='chitietxe')
 							include('php/chitietxe.php');
@@ -343,8 +398,15 @@
 		subiz('setAccount', 'acqesyywfdutbqwxxnsw');
 	</script>
 
-
-
+  
 	
 </body>
 </html>
+
+
+
+      
+    </div>
+  </div>
+  
+</div>

@@ -38,10 +38,17 @@ if (isset($_POST["gui"])) {
 	if($hoten && $binhluan)
 	{
 		//mở kết nối
-		include('include/ketnoi.php'); 
+			$host = "localhost";
+	$user = "root";
+	$pass = "";
+	$db = "datxedulich";
+	$con = mysqli_connect($host,$user,$pass,$db);
+	mysqli_set_charset($con,'UTF8');
 		//thực hiện câu truy vấn
-		mysql_query("insert into comment(comment) values( $binhluan)");
 		
+		mysqli_query("insert into comment (comment) values ('$binhluan')");
+
+
 
 	}	
 }
