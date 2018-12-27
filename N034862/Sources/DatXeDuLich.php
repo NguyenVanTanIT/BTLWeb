@@ -124,7 +124,7 @@
 
 						<div class="col-md-6">
 						<!-- <a class="nav-link  rounded text-white" href="DatXeDuLich.php?page=dangky"></a>  -->
-						<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><a href="DatXeDuLich.php?page=dangky">Đăng Ký</a></button>
+						<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" ><a href="DatXeDuLich.php?page=dangky" style="color: white;">Đăng Ký</a></button>
 
 						</div>
 					</div>
@@ -381,9 +381,7 @@
 		</script>
 	</footer>	
 
-	<script src="js/jquery.min.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<!-- Subiz -->
+	
 	<script>
 		(function(s, u, b, i, z){
 			u[i]=u[i]||function(){
@@ -398,7 +396,9 @@
 		subiz('setAccount', 'acqesyywfdutbqwxxnsw');
 	</script>
 
-  
+ 
+	<script src="js/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
 	
 </body>
 </html>
