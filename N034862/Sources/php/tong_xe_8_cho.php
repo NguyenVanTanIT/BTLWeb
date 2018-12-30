@@ -1,5 +1,3 @@
-<?php
-?>
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
@@ -13,16 +11,6 @@
 		$loi["hoten"] = $loi["binhluan"] = NULL;
 		$hoten=$binhluan=NUll;
 		if (isset($_POST["gui"])) {
-	//kiểm tra có nhập tiêu đề hay chua
-	// if (empty($_POST["hoten"]))
-	// {
-	// 	$loi["hoten"]="* Xin vui lòng nhập tên";
-	// }
-	// else
-	// {
-	// 	$hoten=$_POST["hoten"];
-	// }
-	//kiểm tra đã nhập bình luận chưa
 			if (empty($_POST["binhluan"]))
 			{
 				$loi["binhluan"]="* Xin vui lòng bình luận";
@@ -82,7 +70,7 @@
 					</tr>
 					<tr>
 						<td></td>
-						<td><input type="submit" value="Gửi" name="gui"></td>
+						<td><input type="submit" value="Bình Luận" name="gui"></td>
 					</tr>
 				</table>
 			</form>

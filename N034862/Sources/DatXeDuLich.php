@@ -241,7 +241,7 @@
 				</div>
 				<div class="col-md-3 bg-success rounded-right">
 					<!--Tìm kiếm nhanh-->
-					<div class="border border-danger rounded bg-primary"  style="margin-top: 25px;">
+								<div class="border border-danger rounded bg-primary"  style="margin-top: 25px;">
 						<div class="box_search_all clearfix" style="margin-bottom: 15px;">
 							<form method="GET" action="search-results.php">
 								<div class=" title_box_search">TÌM NHANH</div>
@@ -272,7 +272,7 @@
 										</select>
 										<div class="clear_left"><span></span></div>
 									</div>
-									<div class="b_search_row">
+									<!-- <div class="b_search_row">
 										<div class="b_search_text">Điểm đến</div>
 										<select name="to" class="form-control select_b_search">
 											<option value="">--Chọn điểm đến--</option>
@@ -281,9 +281,22 @@
 
 										<button type="submit" class="input_b_search btn btn-lint col-md-6 offset-md-3" style="margin-top: 20px;">Tìm xe</button> 
 									</div>
+ -->
+
+ 
+<br>
 
 								</form>
-							</div>
+			<div class="clearfix"></div>
+			<div id="search">
+				<form name="frmsearch" method="GET" action="php/search.php">
+					<input type="text" name="ten" value="" placeholder="Tìm Kiếm">
+					<input type="submit" name="submit" value="Tìm Kiếm">
+				</form>
+
+			</div>
+					
+						</div>
 						</div>
 					</div>
 
