@@ -212,13 +212,6 @@ div.social-links {
   margin-top: 25px;
   margin-left: 60px;
 }
-.gt_lienhe{
- margin-left: 60px;
-}
-.gt_image{
-  margin-bottom: 30px;
-}
-
 .gt_congty{
   text-indent: 30px;
 }
@@ -235,7 +228,7 @@ div.social-links {
     height: inherit;
     line-height: inherit;
     margin: 0px;
-    background-image: url('image/lienhe.png');
+    color: red;
      background-repeat: repeat-y;
    /*  background: none; */
     /*  background-color: #0D0D0D; */

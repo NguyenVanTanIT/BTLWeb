@@ -5,6 +5,7 @@
 			<h1 style="background-color:Tomato;" class="rounded"> Xe 4 chỗ</h1>
 		</div>
 	</div>
+	
 	<?php
 	include('include/ketnoi.php'); 
 	$loi=array();
@@ -46,7 +47,7 @@
 			</div>
 			<div class="col-md-8" style="padding-left: 40px;">
 				<h2 class="tensanpham_tencot">
-					<a href="Xe-4-chỗ-Madza-CX5.html" title="Xe 4 chỗ Mazda CX5">
+					<a href="DatXeDuLich.php?page=chitietxe" title="Xe 4 chỗ Mazda CX5">
 						<h3>
 							<?php echo $row['carname']; ?>
 							
@@ -62,7 +63,6 @@
 	<?php } ?>
 </div>
 
-</div>
 <div id="comment">
 	<fieldset>
 		<legend>Bình Luận</legend>

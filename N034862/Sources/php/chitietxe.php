@@ -1,11 +1,30 @@
+
+<?php 
+	// include('include/ketnoi.php'); 
+	// $carname=$_POST['carname'];
+	
+// 	 $sql="SELECT * FROM car WHERE carname ='$carname'";
+//   $result=mysqli_query($ung, $sql);
+//   $sqlImg= "SELECT * FROM image WHERE isActive=1 AND subjectID='$id'";
+//   $result1=mysqli_query($con, $sqlImg);
+
+ //while ($row= mysqli_fetch_array($result)) {
+	 ?>
+<?php
+   		$car=$_POST['name'];
+	  $carname=$_POST['email'];
+?>
 <div class="container-fluid">
+	<?php print_r($car )?>
+	<?= $carname ?>
+		
 	<div class="row">
 		<div class="col-md-12">
 			<div class="row">
 				<div class="col-md-7">
 					<strong>CHO THUÊ XE CƯỚI BENTLEY</strong>
 					<p></p>
-					<p><strong>Hiệu</strong>: Bentley<br>
+					<p><strong>Tên xe :aaa </strong><br>
 						<strong>Dòng: Bentley</strong><br>
 						<strong>Đời xe</strong>: &nbsp;2015 – 2017<br>
 						<strong>Kiểu xe:</strong> 5 chỗ<br>
@@ -43,8 +62,7 @@
 									<li><a href="http://CHO THUÊ XE HYUNDAI UNIVER 45 CHỖ" target="_blank">Cho thuê xe Hyundai Hi-Class 45 chỗ</a></li>
 									<li><a href="http://CHO THUÊ XE 29 CHỖ HUYNDAI COUNTY" target="_blank">Cho thuê xe 29 chỗ Huyndai County</a></li>
 									<li><a href="http://thuexegiaphat.com/cho-thue-xe-7-cho-innova-new/" target="_blank">Cho thuê xe 7 chỗ Innova</a></li>
-									<li><a href="http://thuexegiaphat.com/cho-thue-xe-cuoi-mercedes-mui-tran/" target="_blank">Cho thuê xe Mercedes Sprinter</a></li>
-									<li><a href="http://thuexegiaphat.com/cho-thue-xe-hyundai-univer-45-cho/" target="_blank">Cho thuê xe Huyndai Aero Express 45 chỗ</a></li>
+									
 								</ul>
 							</td>
 						</tr>
@@ -53,3 +71,4 @@
 			</div>
 		</div>
 	</div>
+

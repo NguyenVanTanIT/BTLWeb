@@ -20,15 +20,20 @@
 					<img src="image/<?php echo $row['image'] ?>" width="250px" height="150px" 
 					style="border:#999999 1px solid;" align="left" />
 				</a>
-				<h2 class="tensanpham_tencot">
-					<a href="Xe-4-chỗ-Madza-CX5.html" title="Xe 4 chỗ Mazda CX5">
-						<h5>
-							<?php echo $row['carname']; ?>
 
+
+				<h2 class="tensanpham_tencot">
+					<a href="DatXeDuLich.php?page=chitietxe" method="POST" >
+						<h5 name ="name">
+							<?php echo $row['carname']; ?>
 						</h5>
 					</a>
 					<h5>Liên Hệ: 0963 651 555</h5>
-					<a class="datxe bg-danger" href="DatXeDuLich.php?page=datxe"><h5>Đặt Xe</h5></a>
+					
+					<a class="datxe bg-danger" href="DatXeDuLich.php?page=datxe">
+						<h5>Đặt Xe</h5>
+					</a>
+
 					
 				</h2>
 			</div>
@@ -56,7 +61,7 @@
 					style="border:#999999 1px solid;" align="left" />
 				</a>
 				<h2 class="tensanpham_tencot">
-					<a href="Xe-4-chỗ-Madza-CX5.html" title="Xe 4 chỗ Mazda CX5">
+					<a href="DatXeDuLich.php?page=chitietxe" title="Xe 4 chỗ Mazda CX5">
 						<h5>
 							<?php echo $row['carname']; ?>
 
@@ -97,7 +102,7 @@
 						style="border:#999999 1px solid;" align="left" />
 					</a>
 					<h2 class="tensanpham_tencot">
-						<a href="Xe-4-chỗ-Madza-CX5.html" title="Xe 4 chỗ Mazda CX5">
+						<a href="DatXeDuLich.php?page=chitietxe" title="Xe 4 chỗ Mazda CX5">
 							<h5>
 								<?php echo $row['carname']; ?>
 
@@ -136,7 +141,7 @@
 						style="border:#999999 1px solid;" align="left" />
 					</a>
 					<h2 class="tensanpham_tencot">
-						<a href="Xe-4-chỗ-Madza-CX5.html" title="Xe 4 chỗ Mazda CX5">
+						<a href="DatXeDuLich.php?page=chitietxe" title="Xe 4 chỗ Mazda CX5">
 							<h5>
 								<?php echo $row['carname']; ?>
 
@@ -174,7 +179,7 @@
 						style="border:#999999 1px solid;" align="left" />
 					</a>
 					<h2 class="tensanpham_tencot">
-						<a href="Xe-4-chỗ-Madza-CX5.html" title="Xe 4 chỗ Mazda CX5">
+						<a href="DatXeDuLich.php?page=chitietxe" title="Xe 4 chỗ Mazda CX5">
 							<h5>
 								<?php echo $row['carname']; ?>
 
