@@ -39,7 +39,7 @@
 		<div class="row " style="padding-top: 20px;">
 			
 			<div class="col-md-4 ">
-				<a href="DatXeDuLich.php?page=chitietxe" title="Xe 4 chỗ Mazda CX5">
+				<a href="chitietxe.php?id_car=<?php echo $row['id_car'] ?>" title="Xe 4 chỗ Mazda CX5">
 					<img src="image/<?php echo $row['image'] ?>" width="250px" height="150px" 
 					style="border:#999999 1px solid;" align="left" />
 				</a>
@@ -47,21 +47,19 @@
 			</div>
 			<div class="col-md-8" style="padding-left: 40px;">
 				<h2 class="tensanpham_tencot">
-					<a href="DatXeDuLich.php?page=chitietxe" title="Xe 4 chỗ Mazda CX5">
+					<a href="chitietxe.php?id_car=<?php echo $row['id_car'] ?>" title="Xe 4 chỗ Mazda CX5">
 						<h3>
-							<?php echo $row['carname']; ?>
-							
+							<?php echo $row['carname']; ?>				
 						</h3>
 					</a>
 					<h6><?php echo $row['describe']; ?></h6>
-
 					<h5>Liên Hệ: 016868686868</h5>
 					<a class="datxe bg-danger" href="DatXeDuLich.php?page=datxe"><h5>Đặt Xe</h5></a>
 				</h2>
 			</div>
 		</div>
 	<?php } ?>
-</div>
+
 
 <div id="comment">
 	<fieldset>
@@ -112,4 +110,5 @@
 			</tbody>
 		</tr>
 	</table>
+</div>
 </div>

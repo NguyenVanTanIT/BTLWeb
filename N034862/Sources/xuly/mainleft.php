@@ -12,7 +12,7 @@
 					<!--Tìm kiếm nhanh-->
 					<div class="border border-danger rounded bg-primary"  style="margin-top: 25px;">
 						<div class="box_search_all clearfix" style="margin-bottom: 15px;">
-							<form method="GET" action="search">
+							<form method="post" action="search.php">
 								<div class=" title_box_search">TÌM NHANH</div>
 								<div class="b_search_content">
 									<div class="b_search_row">

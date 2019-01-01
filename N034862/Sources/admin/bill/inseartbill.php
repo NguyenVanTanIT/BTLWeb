@@ -1,4 +1,4 @@
- 
+<script src="ajaxinsert.js" type="text/javascript" ></script> 
   <div class="container ">
    <br />
    <h2 align="center">Nhập thông tin xe vào form sau</h2>
@@ -33,8 +33,8 @@
     </tr>
   </table>
   <div align="center">
-  <!-- <button type="submit" onclick="foo()">Gửi</button> -->
-   <button type="button" name="save" id="save"onclick="fooo()" class="btn btn-info">Save</button>
+  <button type="submit" onclick="foo()">Gửi</button>
+   <!-- <button type="button" name="save" id="save"onclick="foo()" class="btn btn-info">Save</button> -->
 
  </div>
  <br />
@@ -59,4 +59,3 @@
   fetch_item_data();
 });
 </script>
-<script src="car/ajaxinsert.js" type="text/javascript" ></script>

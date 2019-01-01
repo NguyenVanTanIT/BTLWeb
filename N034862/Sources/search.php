@@ -1,18 +1,31 @@
 
+<?php 
 
+include("xuly/head.php");
+include("xuly/menu.php");
+?>
+<main class="rounded container">
 
+<div class="row">
+	<div class="col-md-9" style="padding-top: 30px;" >
+		<div class="row">
+			
 
 <div class="container-fluid">
 	<!-- xe 4 cho -->
 	<div class="row">
 		<div class="col-md-12">
-			<h1 style="background-color:Tomato;" class="rounded"> Xe 4 chỗ</h1>
+			<h1 style="background-color:Tomato;" class="rounded"><?php
+				echo 'Xe ' . $_POST['seat'] ;
+			?> chỗ</h1>
+		
+			
 		</div>
 	</div>
 	
 	<?php
 	include('include/ketnoi.php'); 
-	$search =$_GET['seat'];
+	$search =$_POST['seat'];
 	$loi=array();
 	$loi["hoten"] = $loi["binhluan"] = NULL;
 	$hoten=$binhluan=NUll;
@@ -35,8 +48,7 @@
 			mysqli_query($ung,"insert into comment (id, comment) values ('$id', '$binhluan')");
 		}	
 	}
-
-	$strSQL="SELECT * FROM car WHERE describe like '%search%'";
+	$strSQL="SELECT * FROM car WHERE seats = '$search' ";
 	$car=mysqli_query($ung,$strSQL);
 	?>
 	<?php $i=0; ?>
@@ -44,7 +56,7 @@
 		<div class="row " style="padding-top: 20px;">
 			
 			<div class="col-md-4 ">
-				<a href="DatXeDuLich.php?page=chitietxe" title="Xe 4 chỗ Mazda CX5">
+				<a href="chitietxe.php?id_car=<?php echo $row['id_car'] ?>" title="Xe 4 chỗ Mazda CX5">
 					<img src="image/<?php echo $row['image'] ?>" width="250px" height="150px" 
 					style="border:#999999 1px solid;" align="left" />
 				</a>
@@ -52,7 +64,7 @@
 			</div>
 			<div class="col-md-8" style="padding-left: 40px;">
 				<h2 class="tensanpham_tencot">
-					<a href="DatXeDuLich.php?page=chitietxe" title="Xe 4 chỗ Mazda CX5">
+					<a href="chitietxe.php?id_car=<?php echo $row['id_car'] ?>" title="Xe 4 chỗ Mazda CX5">
 						<h3>
 							<?php echo $row['carname']; ?>
 							
@@ -66,7 +78,7 @@
 			</div>
 		</div>
 	<?php } ?>
-</div>
+
 
 <div id="comment">
 	<fieldset>
@@ -118,3 +130,16 @@
 		</tr>
 	</table>
 </div>
+		</div>
+
+					</div>	
+					<?php 
+						include("xuly/mainleft.php");
+					?>
+	</main>
+
+	<?php 
+
+		include("xuly/footer.php");
+		
+	 ?>

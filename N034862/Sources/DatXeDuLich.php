@@ -21,7 +21,7 @@
 						if($page =='trangchu')
 							include "php/trangchu.php";
 						if($page =='datxe')
-							include "php/datxe.html";
+							include "php/formdatxe.php";
 						if($page =='lienhe')
 							include "php/lienhe.php";
 						if($page =='gioithieu')
@@ -34,11 +34,7 @@
 						
 						if($page =='dangky')
 							include "register.html";
-						
-						
 
-						if($page =='chitietxe')
-							include('php/chitietxe.php');
 						if($page =='tongxe4cho')
 							include('php/tong_xe_4_cho.php');
 						if($page =='tongxe8cho')

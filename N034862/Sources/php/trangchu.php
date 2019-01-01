@@ -16,14 +16,12 @@
 		<?php $i=0; ?>
 		<?php while($row=mysqli_fetch_array($car)) {$i+=1; ?>
 			<div class="col-md-4">
-				<a href="DatXeDuLich.php?page=chitietxe" title="Xe 4 chỗ Mazda CX5">
+				<a href="chitietxe.php?id_car=<?php echo $row['id_car'] ?>" title="Xe 4 chỗ Mazda CX5">
 					<img src="image/<?php echo $row['image'] ?>" width="250px" height="150px" 
 					style="border:#999999 1px solid;" align="left" />
 				</a>
-
-
 				<h2 class="tensanpham_tencot">
-					<a href="DatXeDuLich.php?page=chitietxe" method="POST" >
+					<a href="chitietxe.php?id_car=<?php echo $row['id_car'] ?>">
 						<h5 name ="name">
 							<?php echo $row['carname']; ?>
 						</h5>
@@ -56,12 +54,12 @@
 		<?php $i=0; ?>
 		<?php while($row=mysqli_fetch_array($car)) { $i+=1; ?>
 			<div class="col-md-4">
-				<a href="DatXeDuLich.php?page=chitietxe" title="Xe 4 chỗ Mazda CX5">
+				<a href="chitietxe.php?id_car=<?php echo $row['id_car'] ?>" title="Xe 4 chỗ Mazda CX5">
 					<img src="image/<?php echo $row['image'] ?>" width="250px" height="150px" 
 					style="border:#999999 1px solid;" align="left" />
 				</a>
 				<h2 class="tensanpham_tencot">
-					<a href="DatXeDuLich.php?page=chitietxe" title="Xe 4 chỗ Mazda CX5">
+					<a href="chitietxe.php?id_car=<?php echo $row['id_car'] ?>" title="Xe 4 chỗ Mazda CX5">
 						<h5>
 							<?php echo $row['carname']; ?>
 
@@ -97,12 +95,12 @@
 			<?php $i=0; ?>
 			<?php while($row=mysqli_fetch_array($car)) { $i+=1; ?>
 				<div class="col-md-4">
-					<a href="DatXeDuLich.php?page=chitietxe" title="Xe 4 chỗ Mazda CX5">
+					<a href="chitietxe.php?id_car=<?php echo $row['id_car'] ?>" title="Xe 4 chỗ Mazda CX5">
 						<img src="image/<?php echo $row['image'] ?>" width="250px" height="150px" 
 						style="border:#999999 1px solid;" align="left" />
 					</a>
 					<h2 class="tensanpham_tencot">
-						<a href="DatXeDuLich.php?page=chitietxe" title="Xe 4 chỗ Mazda CX5">
+						<a href="chitietxe.php?id_car=<?php echo $row['id_car'] ?>" title="Xe 4 chỗ Mazda CX5">
 							<h5>
 								<?php echo $row['carname']; ?>
 
@@ -136,12 +134,12 @@
 			<?php $i=0; ?>
 			<?php while($row=mysqli_fetch_array($car)) { $i+=1; ?>
 				<div class="col-md-4">
-					<a href="DatXeDuLich.php?page=chitietxe" title="Xe 4 chỗ Mazda CX5">
+					<a href="chitietxe.php?id_car=<?php echo $row['id_car'] ?>" title="Xe 4 chỗ Mazda CX5">
 						<img src="image/<?php echo $row['image'] ?>" width="250px" height="150px" 
 						style="border:#999999 1px solid;" align="left" />
 					</a>
 					<h2 class="tensanpham_tencot">
-						<a href="DatXeDuLich.php?page=chitietxe" title="Xe 4 chỗ Mazda CX5">
+						<a href="chitietxe.php?id_car=<?php echo $row['id_car'] ?>" title="Xe 4 chỗ Mazda CX5">
 							<h5>
 								<?php echo $row['carname']; ?>
 
@@ -174,12 +172,12 @@
 			<?php $i=0; ?>
 			<?php while($row=mysqli_fetch_array($car)) { $i+=1; ?>
 				<div class="col-md-4">
-					<a href="DatXeDuLich.php?page=chitietxe" title="Xe 4 chỗ Mazda CX5">
+					<a href="chitietxe.php?id_car=<?php echo $row['id_car'] ?>" title="Xe 4 chỗ Mazda CX5">
 						<img src="image/<?php echo $row['image'] ?>" width="250px" height="150px" 
 						style="border:#999999 1px solid;" align="left" />
 					</a>
 					<h2 class="tensanpham_tencot">
-						<a href="DatXeDuLich.php?page=chitietxe" title="Xe 4 chỗ Mazda CX5">
+						<a href="chitietxe.php?id_car=<?php echo $row['id_car'] ?>" title="Xe 4 chỗ Mazda CX5">
 							<h5>
 								<?php echo $row['carname']; ?>
 

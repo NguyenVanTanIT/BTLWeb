@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="fonts/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
   
- <script src="js/jquery.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+<!--  <script src="js/jquery.min.js"></script> -->
+  <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 </head>
@@ -95,6 +95,8 @@
               include "donhang.php";
             if($page =='admin')
           ?>
+        </div>
+        </div>
     </div>
   </body>
 </html>
