@@ -46,6 +46,9 @@
 						if($page =='tongxe45cho')
 							include('php/tong_xe_45_cho.php');
 							
+
+
+
 						
 						?>
 					</div>	
@@ -53,6 +56,7 @@
 						include("xuly/mainleft.php");
 					?>
 	</main>
+	
 
 	<?php 
 

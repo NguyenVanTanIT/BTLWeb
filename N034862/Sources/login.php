@@ -21,14 +21,15 @@
 		$_SESSION["user"] = $_POST["username"];
 		header("location: DatXeDuLich.php?user=".$username);
 	} 
-	if(mysqli_num_rows($data) == 1 && $row['level'] ==2)
+	else
+	{if(mysqli_num_rows($data) == 1 && $row['level'] ==2)
 	{
 		header("location: admin/index.php?user=".$username);
 	}
 	else
 	{
 			header("location: DatXeDuLich.php?page=dangnhap&err=false");
-	}
+	}}
 		
  ?>
 
