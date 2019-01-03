@@ -31,7 +31,7 @@ $sotin1trang = 15;
 					</a>
 					<h5>Liên Hệ: 0963 651 555</h5>
 					
-					<a class="datxe bg-danger" href="DatXeDuLich.php?page=datxe">
+					<a class="datxe bg-danger" href="formdatxe.php?id_car=<?php echo $row['id_car'] ?>">
 						<h5>Đặt Xe</h5>
 					</a>
 				
@@ -69,7 +69,7 @@ $sotin1trang = 15;
 					<h5>Liên Hệ: 0963 651 555</h5>
 					
 					<div style="padding-bottom: 10px">
-						<a class="datxe bg-danger" href="DatXeDuLich.php?page=datxe"><h5>Đặt Xe</h5></a>
+						<a class="datxe bg-danger" href="formdatxe.php?id_car=<?php echo $row['id_car'] ?>"><h5>Đặt Xe</h5></a>
 					</div>
 				</div>
 			<?php } ?>
@@ -103,7 +103,7 @@ $sotin1trang = 15;
 						</a>
 						<h5>Liên Hệ: 0963 651 555</h5>
 						<div>
-							<a class="datxe bg-danger" href="DatXeDuLich.php?page=datxe"><h5>Đặt Xe</h5></a>
+							<a class="datxe bg-danger" href="formdatxe.php?id_car=<?php echo $row['id_car'] ?>"><h5>Đặt Xe</h5></a>
 
 						</div>
 					</h2>
@@ -139,7 +139,7 @@ $sotin1trang = 15;
 						</a>
 						<h5>Liên Hệ: 0963 651 555</h5>
 						<div>
-							<a class="datxe bg-danger" href="DatXeDuLich.php?page=datxe"><h5>Đặt Xe</h5></a>
+							<a class="datxe bg-danger" href="formdatxe.php?id_car=<?php echo $row['id_car'] ?>"><h5>Đặt Xe</h5></a>
 
 						</div>
 					</h2>
@@ -176,7 +176,7 @@ $sotin1trang = 15;
 						</a>
 						<h5>Liên Hệ: 0963 651 555</h5>
 						<div style="padding-bottom: 10px">
-							<a class="datxe bg-danger" href="DatXeDuLich.php?page=datxe"><h5>Đặt Xe</h5></a>
+							<a class="datxe bg-danger" href="formdatxe.php?id_car=<?php echo $row['id_car'] ?>"><h5>Đặt Xe</h5></a>
 
 						</div>
 					</h2>

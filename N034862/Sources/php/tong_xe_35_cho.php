@@ -54,7 +54,7 @@
 					</a>
 					<h6><?php echo $row['describe']; ?></h6>
 					<h5>Liên Hệ: 016868686868</h5>
-					<a class="datxe bg-danger" href="DatXeDuLich.php?page=datxe"><h5>Đặt Xe</h5></a>
+					<a class="datxe bg-danger" href="formdatxe.php?id_car=<?php echo $row['id_car'] ?>"><h5>Đặt Xe</h5></a>
 				</h2>
 			</div>
 		</div>

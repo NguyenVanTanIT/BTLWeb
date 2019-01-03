@@ -33,7 +33,7 @@ include("xuly/menu.php");
 						<strong>Màu xe:</strong>&nbsp;Bạc – Đen – Trắng<br>
 						<strong>Giá thuê tháng: Liên hệ</strong></p>
 						<p><strong>Chi tiết: </strong> <?php echo $row['describe']; ?> </strong></p>
-						<a class="datxe bg-danger" href="DatXeDuLich.php?page=datxe"><h5>Đặt Xe</h5></a>
+						<a class="datxe bg-danger" href="formdatxe.php?id_car=<?php echo $row['id_car'] ?>"><h5>Đặt Xe</h5></a>
 					</div>
 					<div class="col-md-5">
 						<img class="d-block w-100" alt="Carousel Bootstrap Second" src="image/<?php echo $row['image'] ?>" width="400px" height="200px">
