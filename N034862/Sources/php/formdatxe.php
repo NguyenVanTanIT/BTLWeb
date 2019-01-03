@@ -24,9 +24,9 @@
                 </div style="padding-top: 12px;">
                 <div class="row row_book" style="padding-top: 12px;">
                     <div class="col-md-3 col-sm-3 col-xs-12">Giờ đón khách:<font color="Red">(*)</font></div>
-                    <div class="col-md-3 col-sm-3 col-xs-12"><input type="text" name="thoigiandon" class="number_car" id="thoigiandon"></div>
+                    <div class="col-md-3 col-sm-3 col-xs-12"><input type="date" name="thoigiandon" class="number_car" id="thoigiandon"></div>
                     <div class="col-md-3 col-sm-3 col-xs-12">Giờ trả xe(ngày cuối):<font color="Red">(*)</font></div>
-                    <div class="col-md-3 col-sm-3 col-xs-12"><input type="text" name="giotraxe" class="number_car" id="giotraxe"></div>
+                    <div class="col-md-3 col-sm-3 col-xs-12"><input type="date" name="giotraxe" class="number_car" id="giotraxe"></div>
                 </div>
                 <div class="row row_book" style="padding-top: 12px;">
                     <div class="col-md-3 col-sm-3 col-xs-12">Điểm đón khách:<font color="Red">(*)</font></div>
@@ -49,15 +49,15 @@
                 </div>      
                 <div class="row row_book" style="padding-top: 12px;">
                     <div class="col-md-3 col-sm-3 col-xs-12">Email (<font style="color:red;">*</font>)</div>
-                    <div class="col-md-6 col-sm-6 col-xs-12"> <input type="text" name="ct_email" class="input_contact_2" id="email"  value="<?=$_SESSION["user"]?>"> </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12"> <input type="text" name="ct_email" class="input_contact_2" id="email"  value="<?=$_SESSION["email"]?>"> </div>
                 </div>
                 <div class="row row_book" style="padding-top: 12px;">
                     <div class="col-md-3 col-sm-3 col-xs-12">Số điện thoại </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12"> <input type="text" name="ct_phone" class="input_contact_2" value="<?=$_SESSION["password"]?>"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-12"> <input type="text" name="ct_phone" class="input_contact_2" ></div>
                 </div>
                 <div class="row row_book" style="padding-top: 12px;">
                     <div class="col-md-3 col-sm-3 col-xs-12">Địa chỉ</div>
-                    <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" name="ct_add" class="input_contact_2" value="<?=$_SESSION["address"]?>"></div>
+                    <div class="col-md-6 col-sm-6 col-xs-12"><input type="text" name="ct_add" class="input_contact_2" ></div>
                 </div>
                 
                 <div class="row row_book" style="padding-top: 12px;" >
@@ -76,6 +76,7 @@
 
 <?php
       include('include/ketnoi.php'); 
+      $sql = "select * from user where user=$_SESSION["user"]";
 
   ?>
  

@@ -26,7 +26,6 @@ include("xuly/menu.php");
 		<div class="col-md-12">
 			<div class="row">
 				<div class="col-md-7">
-					<strong>CHO THUÊ XE CƯỚI BENTLEY</strong>
 					<p></p>
 					<p><strong>Tên xe : <?php echo $row['carname']; ?> </strong><br>
 						<strong>Đời xe</strong>: &nbsp;2017 – 2018<br>
@@ -34,6 +33,7 @@ include("xuly/menu.php");
 						<strong>Màu xe:</strong>&nbsp;Bạc – Đen – Trắng<br>
 						<strong>Giá thuê tháng: Liên hệ</strong></p>
 						<p><strong>Chi tiết: </strong> <?php echo $row['describe']; ?> </strong></p>
+						<a class="datxe bg-danger" href="DatXeDuLich.php?page=datxe"><h5>Đặt Xe</h5></a>
 					</div>
 					<div class="col-md-5">
 						<img class="d-block w-100" alt="Carousel Bootstrap Second" src="image/<?php echo $row['image'] ?>" width="400px" height="200px">

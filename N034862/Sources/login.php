@@ -14,19 +14,21 @@
 	//thực hiện câu truy vấn
 	$data = mysqli_query($con,"select * from users where username = '$username' and password = '$password'"); 
 
-	$row=mysqli_fetch_array($data);  
-	if(mysqli_num_rows($data) == 1 && $row['level'==1] )
+	$row=mysqli_fetch_array($data); 
+
+	if(mysqli_num_rows($data) == 1 && $row['level'] ==1 )
 	{
 		$_SESSION["user"] = $_POST["username"];
 		header("location: DatXeDuLich.php?user=".$username);
-	} if(mysqli_num_rows($data) == 1 && $row['level'==2] )
+	} 
+	if(mysqli_num_rows($data) == 1 && $row['level'] ==2)
 	{
 		header("location: admin/index.php?user=".$username);
 	}
 	else
-		{
+	{
 			header("location: DatXeDuLich.php?page=dangnhap&err=false");
-		}
+	}
 		
  ?>
 
