@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="fonts/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
   
-<!--  <script src="js/jquery.min.js"></script> -->
-  <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+ <script src="js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   
 
@@ -45,6 +45,7 @@
                 <a class="dropdown-item" href="index.php?page=deletecar">Xóa </a>  
               </div>
             </li>
+            
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle rounded" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Quản Lý Hóa Đơn</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">

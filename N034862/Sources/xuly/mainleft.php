@@ -112,3 +112,7 @@
 				</div>
 			</div>
 		</div>
+		<div id="map" style="width:500px;height:500px;">
+            <iframe src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvlqF9mz4ULufOA3WQzIvlgC4rZfASKNI&callback=initMap" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+

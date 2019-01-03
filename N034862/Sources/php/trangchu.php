@@ -172,7 +172,6 @@ $sotin1trang = 15;
 						<a href="chitietxe.php?id_car=<?php echo $row['id_car'] ?>" title="Xe 4 chỗ Mazda CX5">
 							<h5>
 								<?php echo $row['carname']; ?>
-
 							</h5>
 						</a>
 						<h5>Liên Hệ: 0963 651 555</h5>
@@ -193,3 +192,5 @@ $sotin1trang = 15;
 				?>
 		</div>
 	</div>
+
+		

@@ -21,10 +21,10 @@ function fooo() {
 		},
 		success: function(result){
 			if(result==1){
-				alert("111");
+				alert("Thêm thành công");
 			}
 			else{
-				alert('00');
+				alert('Thêm thất bại');
 			}
 		},		
 	});
