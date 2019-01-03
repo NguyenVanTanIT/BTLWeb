@@ -14,14 +14,14 @@
       <th width="5%">license</th>
     </tr>
     <tr>
-      <!-- <td><input type="text" id="carname" name="carname" value="" size="5" class="form-control"></td>
+      <td><input type="text" id="carname" name="carname" value="" size="5" class="form-control"></td>
       <td><input type="text" id="describe" name="describe" value="" class="form-control"></td>
       <td><input type="text" id="image" name="image" value=""class="form-control"></td>
       <td><input type="text" id="seats" name="seats" value=""class="form-control"></td>
       <td><input type="text" id="licenseplate" name="licenseplate" value=""size="5"class="form-control"></td>
       <td><input type="text" name="license" id="license" value=""size="5"class="form-control"></td>
-   -->
-   <td><input type="text" id="carname" name="carname" value=""></td>
+     
+   <!-- <td><input type="text" id="carname" name="carname" value=""></td>
         
         <td><input type="text" id="describe" name="describe" value=""></td>
               <td><input type="" id="image" name="image" value=""></td>
@@ -29,11 +29,11 @@
               <td><input type="text" id="seats" name="seats" value=""></td>
          
          <td><input type="text" id="licenseplate" name="licenseplate" value=""></td>
-              <td><input type="text" name="license" id="license" value=""></td>
+              <td><input type="text" name="license" id="license" value=""></td> -->
     </tr>
   </table>
   <div align="center">
-  <!-- <button type="submit" onclick="foo()">Gửi</button> -->
+  
    <button type="button" name="save" id="save"onclick="fooo()" class="btn btn-info">Save</button>
 
  </div>
@@ -43,6 +43,8 @@
 
 </div>
 <!--  -->
+<script src="car/ajaxinsert.js" type="text/javascript" ></script>
+
 <script>
   $(document).ready(function(){
    function fetch_item_data()
@@ -57,6 +59,8 @@
   })
   }
   fetch_item_data();
+
+  
+
 });
 </script>
-<script src="car/ajaxinsert.js" type="text/javascript" ></script>

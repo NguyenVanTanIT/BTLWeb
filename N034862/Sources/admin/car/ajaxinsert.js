@@ -1,5 +1,6 @@
+
+
 function fooo() {
-	
 	var carname=$("#carname").val();
 	var describe=$("#describe").val();
 	var image= $("#image").val();
@@ -8,7 +9,7 @@ function fooo() {
 	var license=$("#license").val();
 
 	$.ajax({
-		url: 'ajax.php',
+		url: 'car/insert.php',
 		type: 'post',
 		data: {
 			carname: carname,

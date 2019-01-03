@@ -6,6 +6,9 @@
 		</div>
 	</div>
 
+<?php
+$sotin1trang = 15;
+?>
 	<div class="row ">
 		<?php
 		include('include/ketnoi.php'); 
@@ -31,8 +34,7 @@
 					<a class="datxe bg-danger" href="DatXeDuLich.php?page=datxe">
 						<h5>Đặt Xe</h5>
 					</a>
-
-					
+				
 				</h2>
 			</div>
 		<?php } ?>
@@ -62,21 +64,16 @@
 					<a href="chitietxe.php?id_car=<?php echo $row['id_car'] ?>" title="Xe 4 chỗ Mazda CX5">
 						<h5>
 							<?php echo $row['carname']; ?>
-
 						</h5>
 					</a>
 					<h5>Liên Hệ: 0963 651 555</h5>
 					
 					<div style="padding-bottom: 10px">
 						<a class="datxe bg-danger" href="DatXeDuLich.php?page=datxe"><h5>Đặt Xe</h5></a>
-
 					</div>
-
-
 				</div>
 			<?php } ?>
 		</div>
-
 
 		<!-- xe 16 cho-->
 		<div class="row" style="padding-top: 10px;">
@@ -88,7 +85,6 @@
 		<div class="row ">
 			<?php
 			include('include/ketnoi.php'); 
-
 			$strSQL="SELECT * FROM car WHERE seats =16";
 			$car=mysqli_query($ung,$strSQL);
 			?>
@@ -103,7 +99,6 @@
 						<a href="chitietxe.php?id_car=<?php echo $row['id_car'] ?>" title="Xe 4 chỗ Mazda CX5">
 							<h5>
 								<?php echo $row['carname']; ?>
-
 							</h5>
 						</a>
 						<h5>Liên Hệ: 0963 651 555</h5>
@@ -115,7 +110,6 @@
 				</div>
 			<?php } ?>
 		</div>
-
 		<!-- xe 35 cho -->
 		<div class="row " style="padding-top: 10px;">
 
@@ -123,11 +117,9 @@
 				<h1 style="background-color:Tomato;" class="rounded"> Xe 35 chỗ</h1>
 			</div>
 		</div>
-
 		<div class="row ">
 			<?php
 			include('include/ketnoi.php'); 
-
 			$strSQL="SELECT * FROM car WHERE seats =35";
 			$car=mysqli_query($ung,$strSQL);
 			?>
@@ -191,5 +183,13 @@
 					</h2>
 				</div>
 			<?php } ?>
+			<?php
+			 $page = mysqli_query("SELECT * FROM car");
+			 $tongtin = mysqli_num_rows($page);
+			 echo $sotrang = ceil($tongsotin / $sotin1trang);
+			 for($i =1; $i <= $sotrang ; $i++){
+				 echo "a href=' .php?trang =$i'>Trang $i </a> - ";
+			 }
+				?>
 		</div>
 	</div>
