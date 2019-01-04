@@ -1,13 +1,4 @@
 
-<html>  
-    <head>  
-        <title>update car</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
-          
-    </head>  
-    <body>  
         <div class="container">  
             <br />
    <div class="table-responsive">  
@@ -35,14 +26,16 @@
    </div>  
   </div>
     </body>  
-</html>  
-<script>  
+
+
+
+    <script>  
 $(document).ready(function(){  
     
     function fetch_data()
     {
         $.ajax({
-            url:"select.php",
+            url:"car/select.php",
             method:"POST",
             dataType:"json",
             success:function(data)
@@ -51,8 +44,7 @@ $(document).ready(function(){
                 for(var count = 0; count < data.length; count++)
                 {
                     html += '<tr>';
-                    html += '<td><input type="checkbox" id_car="'+data[count].id_car+'" data-carname="'+data[count].carname+'" data-describe="'+data[count].describe+'" data-image="'+data[count].image+'" data-seats="'+data[count].seats+'" data-licenseplate="'+data[count].licenseplate+'" data-license="'+data[count].license+'" class="check_box"  /></td>';
-
+                    html += '<td><input type="checkbox" id_car="'+data[count].id_car+'" carname="'+data[count].carname+'" describe="'+data[count].describe+'" image="'+data[count].image+'" seats ="'+data[count].seats+'" licenseplate="'+data[count].licenseplate+'" license ='+data[count].license+'" class="check_box"  /></td>';
                     html += '<td>'+data[count].carname+'</td>';
                     html += '<td>'+data[count].describe+'</td>';
                     html += '<td>'+data[count].image+'</td>';
@@ -64,6 +56,49 @@ $(document).ready(function(){
             }
         });
     }
-fetch_data();
+
+    fetch_data();
+
+    $(document).on('click', '.check_box', function(){
+        var html = '';
+        if(this.checked)
+        {
+            html = '<td><input type="checkbox" id="'+$(this).attr('id')+'" data-name="'+$(this).data('name')+'" data-address="'+$(this).data('address')+'" data-gender="'+$(this).data('gender')+'" data-designation="'+$(this).data('designation')+'" data-age="'+$(this).data('age')+'" class="check_box" checked /></td>';
+            html += '<td><input type="text" name="name[]" class="form-control" value="'+$(this).data("name")+'" /></td>';
+            html += '<td><input type="text" name="address[]" class="form-control" value="'+$(this).data("address")+'" /></td>';
+            html += '<td><select name="gender[]" id="gender_'+$(this).attr('id')+'" class="form-control"><option value="Male">Male</option><option value="Female">Female</option></select></td>';
+            html += '<td><input type="text" name="designation[]" class="form-control" value="'+$(this).data("designation")+'" /></td>';
+            html += '<td><input type="text" name="age[]" class="form-control" value="'+$(this).data("age")+'" /><input type="hidden" name="hidden_id[]" value="'+$(this).attr('id')+'" /></td>';
+        }
+        else
+        {
+            html = '<td><input type="checkbox" id="'+$(this).attr('id')+'" data-name="'+$(this).data('name')+'" data-address="'+$(this).data('address')+'" data-gender="'+$(this).data('gender')+'" data-designation="'+$(this).data('designation')+'" data-age="'+$(this).data('age')+'" class="check_box" /></td>';
+            html += '<td>'+$(this).data('name')+'</td>';
+            html += '<td>'+$(this).data('address')+'</td>';
+            html += '<td>'+$(this).data('gender')+'</td>';
+            html += '<td>'+$(this).data('designation')+'</td>';
+            html += '<td>'+$(this).data('age')+'</td>';            
+        }
+        $(this).closest('tr').html(html);
+        $('#gender_'+$(this).attr('id')+'').val($(this).data('gender'));
+    });
+
+    $('#update_form').on('submit', function(event){
+        event.preventDefault();
+        if($('.check_box:checked').length > 0)
+        {
+            $.ajax({
+                url:"car/multiple_update.php",
+                method:"POST",
+                data:$(this).serialize(),
+                success:function()
+                {
+                    alert('Data Updated');
+                    fetch_data();
+                }
+            })
+        }
+    });
+
 });  
 </script>

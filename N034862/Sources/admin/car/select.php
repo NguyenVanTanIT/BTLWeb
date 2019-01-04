@@ -4,7 +4,7 @@
 
 include('connect.php');
 
-$query = "SELECT * FROM `car` ORDER BY `id_car` DESC";
+$query = "SELECT * FROM `car` ORDER BY id_car DESC";
 
 $statement = $connect->prepare($query);
 

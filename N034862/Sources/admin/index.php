@@ -30,7 +30,7 @@
   <!-- menu -->
   <nav class="navbar navbar-expand-lg  sticky-top" id="menu">
     <div class="container">
-      <a class="nav-link text-white" href="DatXeDuLich.php?page=trangchu"><i class="fa fa-lg fa-home"></i></a>
+      <a class="nav-link text-white" href="index.php?page=insertcar"><i class="fa fa-lg fa-home"></i></a>
       <button class="navbar-toggler" type="button " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="fa fa-lg fa-bars text-white" ></span></button>       
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

@@ -182,14 +182,7 @@ $sotin1trang = 15;
 					</h2>
 				</div>
 			<?php } ?>
-			<?php
-			 $page = mysqli_query("SELECT * FROM car");
-			 $tongtin = mysqli_num_rows($page);
-			 echo $sotrang = ceil($tongsotin / $sotin1trang);
-			 for($i =1; $i <= $sotrang ; $i++){
-				 echo "a href=' .php?trang =$i'>Trang $i </a> - ";
-			 }
-				?>
+
 		</div>
 	</div>
 
